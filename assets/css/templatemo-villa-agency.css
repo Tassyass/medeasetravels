@@ -566,15 +566,38 @@ footer.footer a:hover {
 }
 
 .header-area .main-nav .nav li:last-child {
-  padding-right: 0px;
+  float: left; /* Align the button to the left */
+  margin-left: 0; /* Reset margins to ensure proper alignment */
 }
-
+ 
 .header-area .main-nav .nav li {
   padding-left: 10px;
   padding-right: 10px;
   height: 100px;
   line-height: 100px;
+  
 }
+
+/* Schedule button aligned like other navbar items */
+.header-area .main-nav ul.nav li.schedule-button {
+  float: none; /* Remove any specific float */
+  margin-left: 0; /* Reset margin */
+}
+
+.header-area .main-nav ul.nav li.schedule-button a {
+  background: none; /* Remove background color to match other links */
+  border-radius: 0; /* Remove rounded corners */
+  color: #1e1e1e; /* Match color with other links */
+  padding: 0 20px; /* Adjust spacing */
+  font-weight: 500; /* Consistent font weight */
+  text-transform: capitalize;
+}
+
+.header-area .main-nav ul.nav li.schedule-button a:hover {
+  color: #01796f; /* Change color on hover */
+}
+
+
 
 .header-area .main-nav .nav li a {
   display: block;
@@ -592,6 +615,7 @@ footer.footer a:hover {
   transition: all 0.4s ease 0s;
   border: transparent;
   letter-spacing: .25px;
+  text-align: center;
 }
 
 .header-area .main-nav .nav li:last-child a {
@@ -858,6 +882,84 @@ footer.footer a:hover {
     padding-left: 0px !important;
     padding-right: 0px !important;
   }
+  .header-area .main-nav .nav li:last-child {
+    float: left; /* Align to the left */
+    position: relative; /* Allow better positioning */
+    margin-left: 20px; /* Add some spacing from the logo */
+}
+
+.header-area .main-nav .nav li:last-child a {
+    background-color:   #4f7d79;
+    color: #fff;
+    font-size: 14px;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+@media (max-width: 992px) {
+    .header-area .main-nav .nav li:last-child a {
+        font-size: 12px; /* Smaller font for tablets */
+        padding: 8px 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .header-area .main-nav .nav li:last-child {
+        margin-left: 0; /* Remove margin on small screens */
+        width: 100%; /* Make button span full width */
+    }
+
+    .header-area .main-nav .nav li:last-child a {
+        text-align: center; /* Center the button text */
+        display: block; /* Ensure it's block for proper alignment */
+    }
+}
+.header-area .main-nav .nav li:last-child a {
+  transition: all 0.3s ease; /* Smooth transition for resizing */
+}
+
+.header-area .main-nav .nav li:last-child:hover a {
+  background-color: #014f45; /* Slightly darker on hover */
+}
+
+@media (max-width: 992px) {
+  .header-area .main-nav .nav .schedule-button {
+      float: none; /* For centered alignment on mobile */
+      width: 100%; /* Make the button full width */
+      text-align: center;
+  }
+
+  .header-area .main-nav .nav .schedule-button a {
+      display: block;
+      margin: 0 auto;
+  }
+}
+
+@media (max-width: 992px) {
+  .header-area .main-nav .nav .schedule-button {
+      float: none; /* Disable float for smaller screens */
+      width: 100%; /* Make the button span full width */
+      text-align: center;
+  }
+
+  .header-area .main-nav .nav .schedule-button a {
+      display: block; /* Ensure proper alignment */
+      margin: 0 auto; /* Center the button */
+  }
+}
+
+@media (max-width: 992px) {
+  .header-area .main-nav ul.nav li:last-child {
+      float: none; /* Remove float for smaller screens */
+      width: 100%; /* Make it span the full width */
+      text-align: left; /* Align the text/button to the left */
+  }
+  .header-area .main-nav ul.nav li:last-child a {
+      display: block;
+      margin-left: 0;
+  }
+}
+
   
 }
 
@@ -969,6 +1071,27 @@ Banner Style
   background-color: rgba(255, 255, 255, 0.5);
 }
 
+.main-banner .item h2 {
+  font-size: 40px; /* Default size for larger screens */
+  line-height: 50px; /* Adjust line height */
+  width: 70%; /* Ensure the text doesn't take too much width */
+}
+
+@media (max-width: 992px) {
+  .main-banner .item h2 {
+      font-size: 32px; /* Smaller size for tablets */
+      line-height: 40px;
+      width: 90%;
+  }
+}
+
+@media (max-width: 576px) {
+  .main-banner .item h2 {
+      font-size: 24px; /* Even smaller size for mobile devices */
+      line-height: 30px;
+      width: 100%;
+  }
+}
 
 
 /* 
@@ -1257,7 +1380,7 @@ Best Deal Style
   font-size: 20px;
   color: #1e1e1e;
   font-weight: 700;
-  float: right;
+  /* float: right; */
   display: inline-block;
 }
 
@@ -2158,4 +2281,4 @@ body {
   .contact-page .section-heading {
     margin-right: 100px;
   }
-}
+}  
