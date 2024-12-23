@@ -12,31 +12,41 @@
   <link rel="stylesheet" href="assets/css/owl.css">
   <link rel="stylesheet" href="assets/css/animate.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="assets/js/custom.js"></script>
   <link rel="icon" type="image/x-icon" href="apple-touch-icon.png">
 </head>
 
 <body>
-  <!-- Header Section -->
   <header class="header-area header-sticky">
     <div class="container">
       <div class="row">
         <div class="col-12">
           <nav class="main-nav">
+            <!-- ** Logo Start ** -->
             <a href="index.html" class="logo">
-              <img src="medease logo.jpg" alt="MedEase Logo" height="80" width="90">
+              <img src="medease logo.jpg" alt="logo" height="80" width="90">
             </a>
+            <!-- ** Logo End ** -->
+            <!-- ** Menu Start ** -->
             <ul class="nav">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="#about">About Us</a></li>
-              <li><a href="#services">Our Services</a></li>
-              <li><a href="#contact">Contact Us</a></li>
-              <li><a href="#schedule" class="active">Schedule an Appointment</a></li>
+              <li><a href="index.html" class="active">Home</a></li>
+              <li><a href="about.html">About us</a></li>
+              <li><a href="our-expertise.html">Our Expertise</a></li>
+              <li><a href="index.html#contt">Contact Us</a></li>
+              <li><a href="processflow.html">Process flow</a></li>
+              <li><a href="schedule-appointment.html"><i class="fa fa-calendar"></i> Schedule an appointment</a></li>
             </ul>
+            <a class="menu-trigger">
+              <span>Menu</span>
+            </a>
+            <!-- ** Menu End ** -->
           </nav>
         </div>
       </div>
     </div>
   </header>
+  
 
   <!-- Main Content Section -->
   <section id="schedule" class="section">
@@ -48,6 +58,10 @@
             <h2>Book Your Appointment</h2>
           </div>
           <form id="schedule-form">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" class="form-control" placeholder="Enter your full name" required>
+            </div>
             <div class="form-group">
               <label for="email">Email Address</label>
               <input type="email" id="email" class="form-control" placeholder="Enter your email" required>
@@ -67,7 +81,7 @@
       </div>
     </div>
   </section>
-  
+
   <!-- Footer Section -->
   <footer class="footer">
     <div class="container">
@@ -77,26 +91,33 @@
 
   <!-- JavaScript -->
   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-  <script src="assets/js/custom.js"></script>
   <script>
+    // Initialize EmailJS with Public Key
     emailjs.init("x4WwsTu0QSwcmgAa2");
 
+    // Form Submission Handler
     document.getElementById("schedule-form").addEventListener("submit", function (e) {
       e.preventDefault();
 
+      const name = document.getElementById("name").value;
       const email = document.getElementById("email").value;
+      const mobile = document.getElementById("mobile").value;
       const scheduleDate = document.getElementById("schedule-date").value;
       const feedback = document.getElementById("form-feedback");
 
-      if (!email || !scheduleDate) {
+      // Validation to ensure all fields are filled
+      if (!name || !email || !mobile || !scheduleDate) {
         feedback.textContent = "Please fill in all fields.";
         feedback.style.color = "red";
         return;
       }
 
+      // Send email using EmailJS
       emailjs
-        .send("service_oyg3yni", "template_b1lhsgf", {
+        .send("service_3kb43gv", "template_b1lhsgf", {
+          user_name: name,
           user_email: email,
+          user_mobile: mobile,
           schedule_date: scheduleDate,
         })
         .then(
