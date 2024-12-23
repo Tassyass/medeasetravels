@@ -480,6 +480,74 @@ footer.footer a:hover {
 }
 
 
+.testimonial-image {
+  width: 150px; /* Fixed square width */
+  height: 150px; /* Fixed square height */
+  border-radius: 0; /* No rounding for perfect square */
+  object-fit: contain; /* Ensures the entire image fits within the square */
+  background-color: #f9f9f9; /* Optional: Adds a light background color for empty space */
+  margin: 0 auto 15px; /* Centers the image and adds spacing below */
+  display: block; /* Centers the image */
+}
+.owl-testimonials .item {
+  text-align: center; /* Centers text under the image */
+  padding: 20px; /* Adds padding around each testimonial */
+}
+
+/* Media Query for Tablets and Mobile Screens */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+
+  .header-area {
+    padding: 10px;
+  }
+
+  .main-banner img {
+    width: 100%;
+    height: auto;
+  }
+
+  .features, .testimonials, .contact {
+    padding: 20px;
+  }
+
+  .testimonials .item img {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+/* Hide the menu by default for smaller screens */
+.menu-trigger {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .nav {
+    display: none; /* Hide menu by default */
+    flex-direction: column;
+    background-color: #fff;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+
+  .nav.show {
+    display: flex; /* Show menu when triggered */
+  }
+
+  .menu-trigger {
+    display: block; /* Show menu trigger for small screens */
+    cursor: pointer;
+    font-size: 18px;
+    margin: 10px;
+  }
+}
+
 
 
 .sub-header ul.info li {
@@ -566,38 +634,15 @@ footer.footer a:hover {
 }
 
 .header-area .main-nav .nav li:last-child {
-  float: left; /* Align the button to the left */
-  margin-left: 0; /* Reset margins to ensure proper alignment */
+  padding-right: 0px;
 }
- 
+
 .header-area .main-nav .nav li {
   padding-left: 10px;
   padding-right: 10px;
   height: 100px;
   line-height: 100px;
-  
 }
-
-/* Schedule button aligned like other navbar items */
-.header-area .main-nav ul.nav li.schedule-button {
-  float: none; /* Remove any specific float */
-  margin-left: 0; /* Reset margin */
-}
-
-.header-area .main-nav ul.nav li.schedule-button a {
-  background: none; /* Remove background color to match other links */
-  border-radius: 0; /* Remove rounded corners */
-  color: #1e1e1e; /* Match color with other links */
-  padding: 0 20px; /* Adjust spacing */
-  font-weight: 500; /* Consistent font weight */
-  text-transform: capitalize;
-}
-
-.header-area .main-nav ul.nav li.schedule-button a:hover {
-  color: #01796f; /* Change color on hover */
-}
-
-
 
 .header-area .main-nav .nav li a {
   display: block;
@@ -615,7 +660,6 @@ footer.footer a:hover {
   transition: all 0.4s ease 0s;
   border: transparent;
   letter-spacing: .25px;
-  text-align: center;
 }
 
 .header-area .main-nav .nav li:last-child a {
@@ -882,84 +926,6 @@ footer.footer a:hover {
     padding-left: 0px !important;
     padding-right: 0px !important;
   }
-  .header-area .main-nav .nav li:last-child {
-    float: left; /* Align to the left */
-    position: relative; /* Allow better positioning */
-    margin-left: 20px; /* Add some spacing from the logo */
-}
-
-.header-area .main-nav .nav li:last-child a {
-    background-color:   #4f7d79;
-    color: #fff;
-    font-size: 14px;
-    padding: 10px 20px;
-    border-radius: 20px;
-}
-
-@media (max-width: 992px) {
-    .header-area .main-nav .nav li:last-child a {
-        font-size: 12px; /* Smaller font for tablets */
-        padding: 8px 15px;
-    }
-}
-
-@media (max-width: 576px) {
-    .header-area .main-nav .nav li:last-child {
-        margin-left: 0; /* Remove margin on small screens */
-        width: 100%; /* Make button span full width */
-    }
-
-    .header-area .main-nav .nav li:last-child a {
-        text-align: center; /* Center the button text */
-        display: block; /* Ensure it's block for proper alignment */
-    }
-}
-.header-area .main-nav .nav li:last-child a {
-  transition: all 0.3s ease; /* Smooth transition for resizing */
-}
-
-.header-area .main-nav .nav li:last-child:hover a {
-  background-color: #014f45; /* Slightly darker on hover */
-}
-
-@media (max-width: 992px) {
-  .header-area .main-nav .nav .schedule-button {
-      float: none; /* For centered alignment on mobile */
-      width: 100%; /* Make the button full width */
-      text-align: center;
-  }
-
-  .header-area .main-nav .nav .schedule-button a {
-      display: block;
-      margin: 0 auto;
-  }
-}
-
-@media (max-width: 992px) {
-  .header-area .main-nav .nav .schedule-button {
-      float: none; /* Disable float for smaller screens */
-      width: 100%; /* Make the button span full width */
-      text-align: center;
-  }
-
-  .header-area .main-nav .nav .schedule-button a {
-      display: block; /* Ensure proper alignment */
-      margin: 0 auto; /* Center the button */
-  }
-}
-
-@media (max-width: 992px) {
-  .header-area .main-nav ul.nav li:last-child {
-      float: none; /* Remove float for smaller screens */
-      width: 100%; /* Make it span the full width */
-      text-align: left; /* Align the text/button to the left */
-  }
-  .header-area .main-nav ul.nav li:last-child a {
-      display: block;
-      margin-left: 0;
-  }
-}
-
   
 }
 
@@ -993,7 +959,7 @@ Banner Style
   background-color: #fff;
   color: #1e1e1e;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 50;
   text-transform: capitalize;
   padding: 6px 15px;
   display: inline-block;
@@ -1006,11 +972,11 @@ Banner Style
 }
 
 .main-banner .item h2 {
-  font-size: 62px;
-  font-weight: 700;
+  font-size: 22px;
+  font-weight: 2000;
   text-transform: uppercase;
-  color: #fff;
-  line-height: 72px;
+  color: #29eb43;
+  line-height: 30px;
   width: 50%;
   margin-bottom: 0px;
 }
@@ -1071,27 +1037,6 @@ Banner Style
   background-color: rgba(255, 255, 255, 0.5);
 }
 
-.main-banner .item h2 {
-  font-size: 40px; /* Default size for larger screens */
-  line-height: 50px; /* Adjust line height */
-  width: 70%; /* Ensure the text doesn't take too much width */
-}
-
-@media (max-width: 992px) {
-  .main-banner .item h2 {
-      font-size: 32px; /* Smaller size for tablets */
-      line-height: 40px;
-      width: 90%;
-  }
-}
-
-@media (max-width: 576px) {
-  .main-banner .item h2 {
-      font-size: 24px; /* Even smaller size for mobile devices */
-      line-height: 30px;
-      width: 100%;
-  }
-}
 
 
 /* 
@@ -1380,7 +1325,7 @@ Best Deal Style
   font-size: 20px;
   color: #1e1e1e;
   font-weight: 700;
-  /* float: right; */
+  float: right;
   display: inline-block;
 }
 
@@ -1480,7 +1425,7 @@ Contact Style
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  padding: 100px 0px 250px 0px;
+  padding: 0px 0px 0px 0px;
   position: relative;
 }
 
@@ -1489,14 +1434,14 @@ Contact Style
 }
 
 .contact-content {
-  margin-top: -240px;
+  margin-top: -20px;
   position: relative;
   z-index: 1;
 }
 
 .contact-content #map {
   border-radius: 10px;
-  margin-bottom: 60px;
+  margin-bottom: 10px;
 }
 
 .contact-content .item {
@@ -1522,7 +1467,7 @@ Contact Style
 
 .contact-content .item h6 {
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 60;
   vertical-align: middle;
 }
 
@@ -1536,7 +1481,7 @@ Contact Style
   margin-left: 30px;
   border-radius: 10px;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
-  padding: 35px 30px;
+  padding: 30px 30px;
   background-color: #fff;
 }
 
@@ -1548,11 +1493,11 @@ Contact Style
 
 .contact-content #contact-form input {
   width: 100%;
-  height: 44px;
-  border-radius: 22px;
+  height: 40PX;
+  border-radius: 20px;
   background-color: #f6f6f6;
   border: none;
-  margin-bottom: 30px;
+  margin-bottom: 0px;
   font-size: 14px;
   padding: 0px 15px;
 }
@@ -1560,11 +1505,11 @@ Contact Style
 .contact-content #contact-form textarea {
   width: 100%;
   height: 150px;
-  max-height: 180px;
+  max-height: 100px;
   border-radius: 22px;
   background-color: #f6f6f6;
   border: none;
-  margin-bottom: 40px;
+  margin-bottom: 4px;
   font-size: 14px;
   padding: 15px 15px;
 }
@@ -1716,7 +1661,7 @@ process flow
 
 /* Arrow Styles */
 .arrowp {
-  font-size: 24px;
+  font-size: 44px;
   color: #008080;
   margin-left: 20px;
 }
@@ -1731,6 +1676,82 @@ process flow
   .arrowp {
     margin-left: 0;
     margin-top: 10px;
+  }
+}
+/* 
+---------------------------------------------
+SERVICES WE OFFER
+--------------------------------------------- 
+*/
+.heads{
+  background-color: #005555;
+  color: white;
+  padding: 10px 5px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+header p {
+  font-size: 1.0rem;
+  margin-top: 5px;
+}
+
+main {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 10px;
+}
+
+.service {
+  background: white;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.service ul{
+  font-size: 0.3rem;
+}
+
+.service h2 {
+  color: #005555;
+  margin-top: 0;
+  font-size: 0.75rem;
+}
+
+.service p, .service ul {
+  margin: 10px 0 0;
+}
+
+.service ul {
+  padding-left: 20px;
+  list-style-type: disc;
+}
+.ps{
+  color: white;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  body {
+      font-size: 0.9rem;
+  }
+
+  header h1 {
+      font-size: 2rem;
+  }
+
+  header p {
+      font-size: 1rem;
+  }
+
+  .service {
+      padding: 15px;
   }
 }
 /* 
@@ -2281,4 +2302,4 @@ body {
   .contact-page .section-heading {
     margin-right: 100px;
   }
-}  
+}
