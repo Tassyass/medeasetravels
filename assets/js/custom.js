@@ -121,6 +121,11 @@
 		}
 	  }
 	});
+
+	document.querySelector('.menu-trigger').addEventListener('click', function () {
+		document.querySelector('.nav').classList.toggle('show');
+	  });
+	  
   
 	// Page loading animation
 	$(window).on("load", function () {
