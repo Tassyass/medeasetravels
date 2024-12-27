@@ -92,77 +92,55 @@
     </div>
   </header>
   <!-- ** Header Area End ** -->
-
-  <div class="main-banner">
-    <div class="owl-carousel owl-banner">
-      <div class="item item-1">
-        <div class="header-text">
-          <span class="category">Nairobi, <em>Kenya</em></span>
-          <h2>Hurry!<br>Get the Best oversea treatment with us</h2>
-        </div>
-      </div>
-      <div class="item item-2">
-        <div class="header-text">
-          <span class="category">New Delhi, <em>India</em></span>
-          <h2>Be Quick!<br>Get the best treatment in India with us</h2>
-        </div>
-      </div>
-    </div>
+ <!-- Main Banner Section -->
+<div class="main-banner">
+  <div style="position: relative; width: 100%; height: 0; padding-top: 56.2225%; padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden; border-radius: 8px; will-change: transform;">
+    <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+      src="https://www.canva.com/design/DAGaM1cKMFQ/CNPYTBR7BIoyd28Eul6y_Q/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+    </iframe>
   </div>
+</div>
 
-  <div class="featured section">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-4">
-          <div class="left-image">
-            <img src="assets/images/featured.jpg" alt="">
-            <a href="#"><img src="assets/images/featured-icon.jpg" alt="" style="max-width: 60px; padding: 0px;"></a>
-          </div>
-        </div>
-        <div class="col-lg-5">
-          <div class="section-heading">
-            <h6>| Featured</h6>
-            <h2>Best oversea &amp; Hospital Travel Agency</h2>
-          </div>
-          <div class="accordion" id="accordionExample">
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingOne">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                  Best useful links ?
-                </button>
-              </h2>
-              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                 <strong>some content</strong>  <a href="#" target="_blank"></a> </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingTwo">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                  Why Choose Medease Travels?
-                </button>
-              </h2>
-              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                <div class="accordion-body" style="font-size: 24px;">
-                  <ol type="1">
-                   <li>1. Access to leading hospitals in Delhi for world-class medical care.</li>
-                   <li>2. Affordable healthcare with cost-effective packages.</li>
-                   <li>3. Comprehensive support from visa assistance to post-treatment follow-ups.</li>
-                   <li>4. Experienced team ensuring a smooth and comfortable medical journey.</li></ol>
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingThree">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                  Services We Offer
-                </button>
+
+
+<div class="faq-container">
+  <h2 class="h2fa text-center" id="pff">Why Choose Medease Travels?</h2>
+
+  <!-- Why Choose Medease Section -->
+  <div class="faq-item">
+      <button class="faq-question" onclick="toggleAnswer(this)">
+          Why Choose Medease Travels?
+          <span class="arrow">&#9660;</span>
+      </button>
+      <div class="faq-answer">
+          <ol>
+              <li>Access to leading hospitals in Delhi for world-class medical care.</li>
+              <li>Affordable healthcare with cost-effective packages.</li>
+              <li>Comprehensive support from visa assistance to post-treatment follow-ups.</li>
+              <li>Experienced team ensuring a smooth and comfortable medical journey.</li>
+          </ol>
       </div>
-    </div>
   </div>
- <pre>
+</div>
+
+<script>
+  function toggleAnswer(button) {
+      const answer = button.nextElementSibling;
+      const arrow = button.querySelector(".arrow");
+      if (answer.style.display === "block") {
+          answer.style.display = "none";
+          arrow.innerHTML = "&#9660;";
+      } else {
+          answer.style.display = "block";
+          arrow.innerHTML = "&#9650;";
+      }
+  }
+</script>
+
+
+
   
- </pre>
+ </pre> -->
  <body class="faqbody">
   <div class="faq-container">
       <h2 class="h2fa text-center" id="pff">Frequently Asked Questions</h2>
@@ -195,7 +173,7 @@
           <div class="faq-answer">
               <p>Many of our partnered hospitals offer excellent hotel recommendations nearby. Additionally, some provide discounted or complimentary stays for patients, along with perks like free pick-up and drop-off services and discount coupons for added convenience.</p>
               <p>Moreover, there are various accommodation options available, including resorts and Airbnb.</p>
-              <p>With MTC, you can enjoy stress-free medical treatment and a seamless stay experience.</p>
+              <p>With Medease, you can enjoy stress-free medical treatment and a seamless stay experience.</p>
           </div>
       </div>
 
@@ -210,8 +188,8 @@
               <ul>
                   <li>Photo ID</li>
                   <li>Passport</li>
-                  <li>Visa (if required by the destination country)</li>
-                  <li>Any other travel-related documents stipulated by the respective countries</li>
+                  <li>Visa </li>
+                  <li>Any other travel-related documents stipulated.</li>
               </ul>
               <p>Note that visa-free countries still have specific entry and exit requirements that should be carefully reviewed.</p>
               <p>Additionally, for accurate quoting during the initial consultation, we encourage sharing any relevant medical documents such as X-rays, CT scans, and reports from your local doctors as soon as possible.</p>
@@ -292,7 +270,7 @@
               How long is the wait time to get a procedure done?
           </button>
           <div class="faq-answer">
-              <p>At MTC, you benefit from having appointments pre-scheduled.</p>
+              <p>At Medease, you benefit from having appointments pre-scheduled.</p>
               <p>Unlike in Western nations where wait times can extend up to 6-8 months, you can usually secure an appointment date promptly with us. We prioritize fixing your procedure date as soon as possible, sparing you from prolonged waiting and ensuring timely access to care.</p>
           </div>
       </div>
@@ -346,65 +324,127 @@
           }
       }
   </script>
+     <style>
+      .faqbody{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.faq-container {
+  max-width: 700px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.h2fa{
+  font-size: 24px;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #000;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.faq-item {
+  margin-top: 20px;
+}
+
+.faq-question {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  font-weight: bold;
+  color: #007bff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.faq-question .arrow {
+  font-size: 20px;
+  transition: transform 0.3s ease;
+}
+
+.faq-answer {
+  display: none;
+  margin-top: 10px;
+  background-color: #f0f8ff;
+  border-radius: 8px;
+  padding: 15px;
+  border: 1px solid #e0e0e0;
+}
+
+.faq-answer p {
+  margin: 10px 0;
+}
+
+.faq-answer ul {
+  padding-left: 20px;
+}
+
+.faq-answer ul li {
+  margin: 5px 0;
+  line-height: 1.5;
+}
+
+      </style>
 </body>
+<div class="testimonials section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <h3 class="text-center">Patient Testimonials</h3>
+        <div class="owl-carousel owl-testimonials">
+          <div class="item">
+            <img src="assets/images/mohamed.jpg" alt="Mohamednoor Maalim image" class="testimonial-image">
+            <p>"Thanks to Medease Travels, I had rotator cuff surgery done in India after two failed procedures in Kenya, and I am very grateful for their services."</p>
+            <span>- Mohamednoor Maalim, Mombasa</span>
+          </div>
+          <div class="item">
+            <img src="assets/images/dahir.jpg" alt="Dahir Adan Mahad image" class="testimonial-image">
+            <p>"Medease Travels helped me undergo cholecystectomy, where my gallbladder was removed laparoscopically, and I was discharged in 24 hrs!"</p>
+            <span>- Dahir Adan Mahad, Nairobi</span>
+          </div>
+         
+          <div class="item">
+            <img src="assets/images/haji.jpg" alt="Hajj Issack image" class="testimonial-image">
+            <p>"Medease helped us find the best neurologist for my son’s treatment. Their services were affordable and very professional."</p>
+            <span>- Hajj Issack, Mandera</span>
 
-  
-  <div class="video section">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-4 offset-lg-4">
-          <div class="section-heading text-center">
-            <h6>| Video View</h6>
-            <h2>Get Closer View & Different Feeling at our services</h2>
+            <div class="item">
+              <img src="assets/images/rahma.jpg" alt="Rahma Adan image" class="testimonial-image">
+              <p>"Medease helped us find the best neurologist for my son’s treatment. Their services were affordable and very professional."</p>
+              <span>- Rahma Adan, Mandera</span>
+
+              <style>
+                .testimonial-image {
+                  width: 300px; /* Medium width for homepage alignment */
+                  height: auto; /* Maintain aspect ratio */
+                  object-fit: cover; /* Ensure the image fills the container without distortion */
+                  margin: 0 auto 10px; /* Center and add spacing below */
+                  display: block; /* Block display for better alignment */
+                  border-radius: 5px; /* Slight rounding for a polished look */
+                  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add subtle shadow for better visibility */
+                }
+              </style>
+              
+            
+            
           </div>
         </div>
       </div>
     </div>
   </div>
+</div>
 
-  <div class="video-content">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-10 offset-lg-1">
-          <div class="video-frame">
-            <img src="assets/images/video-frame.webp" alt="" height="60%" >
-            <a href="https://youtube.com" target="_blank"><i class="fa fa-play"></i></a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 
-  <div class="fun-facts">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="wrapper">
-            <div class="row">
-              <div class="col-lg-4">
-                <div class="counter">
-                  <h2 class="timer count-title count-number" data-to="22" data-speed="500"></h2>
-                   <p class="count-text ">Partner<br>hospitals</p>
-                </div>
-              </div>
-              <div class="col-lg-4">
-                <div class="counter">
-                  <h2 class="timer count-title count-number" data-to="2" data-speed="500"></h2>
-                  <p class="count-text ">Years<br>Experience</p>
-                </div>
-              </div>
-              <div class="col-lg-4">
-                <div class="counter">
-                  <h2 class="timer count-title count-number" data-to="5" data-speed="500"></h2>
-                  <p class="count-text ">Awards<br>Won since founded</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+ 
   <div class="contact section" id="contt">
     <pre>
 
@@ -543,38 +583,7 @@
 
 
 
-      
-      <div class="testimonials section">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-12">
-              <h3 class="text-center">Patient Testimonials</h3>
-              <div class="owl-carousel owl-testimonials">
-                <div class="item">
-                  <img src="assets/images/mohamed.jpg" alt="Mohamednoor Maalim image" class="testimonial-image">
-                  <p>"Thanks to Medease Travels, I had rotator cuff surgery done in India after two failed procedures in Kenya, and I am very grateful for their services."</p>
-                  <span>- Mohamednoor Maalim, Mombasa</span>
-                </div>
-                <div class="item">
-                  <img src="assets/images/dahir.jpg" alt="Dahir Adan Mahad image" class="testimonial-image">
-                  <p>"Medease Travels helped me undergo cholecystectomy, where my gallbladder was removed laparoscopically, and I was discharged in 24 hrs!"</p>
-                  <span>- Dahir Adan Mahad, Nairobi</span>
-                </div>
-                <div class="item">
-                  <img src="assets/images/rahma.jpg" alt="Rahma Adhan Abdullah image" class="testimonial-image">
-                  <p>"Thanks to Medease Travels, I underwent a successful heart surgery in Delhi. Their support throughout the journey was incredible."</p>
-                  <span>- Rahma Adhan Abdullah, Nairobi</span>
-                </div>
-                <div class="item">
-                  <img src="assets/images/haji.jpg" alt="Hajj Issack image" class="testimonial-image">
-                  <p>"Medease helped us find the best neurologist for my son’s treatment. Their services were affordable and very professional."</p>
-                  <span>- Hajj Issack, Mandera</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+
       
   <footer class="footer">
     <div class="container">
@@ -582,13 +591,13 @@
         <div class="col-lg-6">
           <div class="item phone">
             <img src="assets/images/phone-icon.png" alt="Phone Icon" style="max-width: 40px;">
-            <h6>+254 723-334-445 / +91 721-0498750<br><span>Phone Number</span></h6>
+            <h6>+254 723-334-445 <br><span>Phone Number</span></h6>
           </div>
         </div>
         <div class="col-lg-6">
           <div class="item email">
             <img src="assets/images/email-icon.png" alt="Email Icon" style="max-width: 40px;">
-            <h6><a href="mailto:medeasyagency@gmail.com" style="color: black;">medeasyagency@gmail.com</a><br><span>Business Email</span></h6>
+            <h6><a href="mailto:medeaseagency@gmail.com" style="color: black;">medeaseagency@gmail.com</a><br><span>Business Email</span></h6>
           </div>
         </div>
       </div>

@@ -935,106 +935,50 @@ Banner Style
 --------------------------------------------- 
 */
 
-.main-banner .item {
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 220px 20% 320px 20%;
-  margin-top: 0px;
+/* Default styling for larger screens (laptops and desktops) */
+.main-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0;
 }
 
-.main-banner .item-1 {
-  background-image: url(../images/banner-01.png);
+.main-banner .owl-carousel {
+  width: 90%; /* Adjust width to fit well with the page */
+  height: auto; /* Maintain aspect ratio */
 }
 
-.main-banner .item-2 {
-  background-image: url(../images/banner-02.png);
+.main-banner img {
+  max-width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-.main-banner .item-3 {
-  background-image: url(../images/banner-03.png);
-}
+/* Responsive styling for smaller screens (mobile) */
+@media (max-width: 768px) {
+  .main-banner {
+    flex-direction: column;
+    overflow: hidden; /* Prevent page scroll */
+  }
 
-.main-banner .item span.category {
-  background-color: #fff;
-  color: #1e1e1e;
-  font-size: 16px;
-  font-weight: 50;
-  text-transform: capitalize;
-  padding: 6px 15px;
-  display: inline-block;
-  margin-bottom: 30px;
-}
+  .main-banner .owl-carousel {
+    width: 100%; /* Full width on mobile */
+  }
 
-.main-banner .item span.category em {
-  font-style: normal;
-  color: #01796f;
-}
+  .main-banner img {
+    width: 100%; /* Make image fit the mobile screen */
+    height: 250px; /* Add height constraint */
+    object-fit: cover; /* Ensures image content is properly scaled */
+    overflow-x: scroll; /* Horizontal scroll for swiping */
+  }
 
-.main-banner .item h2 {
-  font-size: 22px;
-  font-weight: 2000;
-  text-transform: uppercase;
-  color: #29eb43;
-  line-height: 30px;
-  width: 50%;
-  margin-bottom: 0px;
-}
-
-.main-banner .owl-dots {
-  position: absolute;
-  bottom: 60px;
-  left: 20%;
-}
-
-.main-banner .owl-dots .owl-dot {
-  width: 10px;
-  height: 10px;
-  background-color: #fff;
-  border-radius: 50%;
-  margin-right: 10px;
-  transition: all .5s;
-}
-
-.main-banner .owl-dots .active {
-  background-color: #01796f;
-}
-
-.main-banner .owl-nav {
-  position: absolute;
-  top: 50%;
-  width: 100%;
-  transform: translateY(-50px);
-}
-
-.main-banner .owl-nav .owl-prev i,
-.main-banner .owl-nav .owl-next i {
-  width: 50px;
-  height: 50px;
-  line-height: 50px;
-  font-size: 24px;
-  display: inline-block;
-  color: #fff;
-  background-color: rgba(255, 255, 255, 0.2);
-  border-radius: 50%;
-  opacity: 1;
-  transition: all .3s;
-}
-
-.main-banner .owl-nav .owl-prev i {
-  position: absolute;
-  left: 45px;
-}
-
-.main-banner .owl-nav .owl-next i {
-  position: absolute;
-  right: 45px;
-}
-
-.main-banner .owl-nav .owl-prev i:hover,
-.main-banner .owl-nav .owl-next i:hover {
-  opacity: 1;
-  background-color: rgba(255, 255, 255, 0.5);
+  .header-text h2 {
+    font-size: 20px; /* Adjust font size for mobile */
+    margin-top: 10px;
+    padding: 10px;
+    text-align: center;
+  }
 }
 
 
