@@ -548,7 +548,46 @@ footer.footer a:hover {
   }
 }
 
+#why-choose-medease {
+  padding: 60px 0; /* Add vertical spacing */
+  background-color: #f9f9f9; /* Light background for the section */
+}
 
+#why-choose-medease .section-heading h6 {
+  color: #01796f; /* Accent color */
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+#why-choose-medease .section-heading h2 {
+  color: #333; /* Darker text for heading */
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.why-choose-box {
+  background-color: #ffffff; /* White box background */
+  border: 1px solid #ddd; /* Light border for the box */
+  border-radius: 8px; /* Rounded corners */
+  padding: 20px 30px; /* Inner spacing */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.why-choose-box ol {
+  list-style-type: decimal; /* Numbered list */
+  margin: 0;
+  padding-left: 20px; /* Indent the numbers */
+  color: #555; /* Softer text color */
+  font-size: 16px; /* Adjust font size */
+  line-height: 1.8; /* Add line spacing for readability */
+}
+
+.why-choose-box ol li {
+  margin-bottom: 15px; /* Space between list items */
+}
 
 .sub-header ul.info li {
   font-size: 14px;
