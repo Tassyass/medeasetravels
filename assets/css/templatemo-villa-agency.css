@@ -481,8 +481,8 @@ footer.footer a:hover {
 
 
 .testimonial-image {
-  width: 150px; /* Fixed square width */
-  height: 150px; /* Fixed square height */
+  width: 1000px; /* Fixed square width */
+  height: 1000px; /* Fixed square height */
   border-radius: 0; /* No rounding for perfect square */
   object-fit: contain; /* Ensures the entire image fits within the square */
   background-color: #f9f9f9; /* Optional: Adds a light background color for empty space */
@@ -1627,6 +1627,9 @@ process flow
 SERVICES WE OFFER
 --------------------------------------------- 
 */
+.expertise-item img{
+  background-color: red;
+}
 .heads{
   background-color: #005555;
   color: white;
@@ -1658,7 +1661,7 @@ main {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 .service ul{
-  font-size: 0.3rem;
+  font-size: 0.9rem;
 }
 
 .service h2 {
