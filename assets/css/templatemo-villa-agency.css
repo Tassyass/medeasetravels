@@ -561,6 +561,112 @@ footer.footer a:hover {
   margin-bottom: 10px;
 }
 
+/* Navbar Adjustments */
+.scrollable-nav ul {
+  display: flex; /* Ensures proper alignment */
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  justify-content: flex-end; /* Aligns navbar items to the right */
+}
+
+.scrollable-nav a {
+  text-decoration: none;
+  padding: 10px 20px;
+  display: inline-block;
+  color: #000; /* Default text color */
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+.scrollable-nav a:hover {
+  color: #01796f; /* Hover color for links */
+  border-bottom: 2px solid #01796f;
+}
+
+.scrollable-nav a.active {
+  font-weight: bold;
+  border-bottom: 2px solid #01796f; /* Highlights active link */
+}
+
+/* "Schedule Appointment" Button Specific Styling */
+.scrollable-nav a i.fa-calendar {
+  margin-right: 8px;
+}
+
+.scrollable-nav li:last-child a {
+  padding: 10px 20px; /* Balanced padding for text fitting */
+  border: 2px solid #01796f; /* Teal border */
+  border-radius: 25px; /* Smooth rounded edges */
+  background-color: #01796f; /* Teal background */
+  color: #ffffff; /* White text */
+  font-weight: 600; /* Slightly bolder text for emphasis */
+  font-size: 14px; /* Adjusted font size for readability */
+  text-align: center; /* Center the text */
+  white-space: nowrap; /* Prevent wrapping of text */
+  transition: all 0.3s ease; /* Smooth hover transition */
+}
+
+.scrollable-nav li:last-child a:hover {
+  background-color: #ffffff; /* Switch to white background on hover */
+  color: #01796f; /* Teal text color */
+  border-color: #01796f; /* Teal border remains */
+}
+
+@media (max-width: 768px) {
+  .scrollable-nav li:last-child a {
+    width: 100%; /* Full width button */
+    text-align: center; /* Center the text */
+    display: block; /* Ensures block-level behavior */
+  }
+}
+
+
+/* Responsive Navbar for Smaller Screens */
+@media (max-width: 768px) {
+  .scrollable-nav ul {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .scrollable-nav li {
+      margin-bottom: 10px;
+  }
+
+  .scrollable-nav a {
+      padding: 10px;
+      text-align: left;
+  }
+
+  .scrollable-nav li:last-child a {
+      width: 100%; /* Button spans full width on mobile */
+      text-align: center;
+  }
+}
+
+
+/* Patient Testimonials Images */
+.testimonial-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.owl-carousel .item {
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .testimonial-image {
+      max-width: 80%; /* Adjusted for mobile view */
+  }
+}
+
+
+
+
+
 #why-choose-medease .section-heading h2 {
   color: #333; /* Darker text for heading */
   font-size: 28px;
@@ -593,67 +699,68 @@ body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
 }
-/* Default styles for larger screens */
-.nav {
-  display: flex;
-  flex-direction: row;
-  list-style: none;
-  justify-content: flex-end;
+/* Default: Navbar on top for larger screens */
+.scrollable-nav {
+  overflow-x: auto;
+  white-space: nowrap;
 }
 
-.nav li {
-  margin: 0 10px;
+.scrollable-nav ul {
+  display: inline-flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.scrollable-nav li {
+  margin-right: 20px;
+}
+
+.scrollable-nav a {
+  text-decoration: none;
+  padding: 10px 15px;
+  display: inline-block;
+  color: #000;
+}
+
+.scrollable-nav a.active {
+  font-weight: bold;
+  border-bottom: 2px solid #01796f;
 }
 
 .menu-trigger {
-  display: none; /* Hidden on larger screens */
+  display: none;
+  cursor: pointer;
 }
 
-/* Responsive styles for smaller screens */
-@media (max-width: 768px) {
-  .main-nav {
-    position: relative;
-  }
+.menu-trigger span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  background-color: #000;
+  transition: all 0.3s ease;
+}
 
+@media (max-width: 768px) {
   .menu-trigger {
     display: block;
-    cursor: pointer;
-    position: fixed;
-    top: 15px;
-    right: 15px;
-    z-index: 1001;
-  }
-
-  .menu-trigger span {
-    display: block;
-    background-color: #000;
-    height: 3px;
-    width: 30px;
-    margin: 5px 0;
   }
 
   .nav {
+    display: none;
     flex-direction: column;
-    align-items: flex-start;
-    position: fixed;
-    top: 0;
-    right: -250px; /* Start off-screen */
-    width: 250px;
-    background-color: #ffffff;
-    height: 100vh;
-    overflow-y: auto;
-    padding: 20px;
-    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
-    transition: right 0.3s ease; /* Smooth slide-in */
-    z-index: 1000;
+    background-color: #fff;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    padding: 10px 0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   }
 
   .nav.active {
-    right: 0; /* Slide in when active */
-  }
-
-  .nav li {
-    margin: 15px 0; /* Add spacing between menu items */
+    display: flex;
   }
 }
 

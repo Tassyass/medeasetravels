@@ -66,23 +66,34 @@
               <img src="medease logo.jpg" alt="logo" height="80" width="90">
             </a>
   
-            <!-- Menu Trigger for Mobile -->
             <a class="menu-trigger">
               <span></span>
               <span></span>
               <span></span>
             </a>
-  
-            <!-- Navigation Links -->
-            <ul class="nav">
-              <li><a href="index.html" class="active">Home</a></li>
-              <li><a href="about.html">About us</a></li>
-              <li><a href="our-expertise.html">Our Expertise</a></li>
-              <li><a href="faq.html">FAQ</a></li>
-              <li><a href="processflow.html">Process flow</a></li>
-              <li><a href="schedule-appointment.html"><i class="fa fa-calendar"></i> Schedule an appointment</a></li>
-            </ul>
-          </nav>
+            
+            <div class="scrollable-nav">
+              <ul class="nav">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="our-expertise.html">Our Expertise</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="processflow.html">Process flow</a></li>
+                <li>
+                  <a href="schedule-appointment.html">
+                    <i class="fa fa-calendar"></i> Schedule Appointment
+                  </a>
+                </li>
+                              </ul>
+            </div>
+            
+            <script>
+  document.querySelector(".menu-trigger").addEventListener("click", function () {
+    const nav = document.querySelector(".nav");
+    nav.classList.toggle("active");
+  });
+</script>
+
         </div>
       </div>
     </div>
@@ -149,33 +160,33 @@
 </body>
 <div class="testimonials section">
   <div class="container">
-    <div class="row">
-      <div class="col-lg-12">
-        <h3 class="text-center">Patient Testimonials</h3>
-        <div class="owl-carousel owl-testimonials">
-          <div class="item">
-            <img src="assets/images/mohamed.jpg" alt="Mohamednoor Maalim image" class="testimonial-image">
-            <p>"Thanks to Medease Travels, I had rotator cuff surgery done in India after two failed procedures in Kenya, and I am very grateful for their services."</p>
-            <span>- Mohamednoor Maalim, Mombasa</span>
+      <div class="row">
+          <div class="col-lg-12">
+              <h3 class="text-center">Patient Testimonials</h3>
+              <div class="owl-carousel owl-testimonials">
+                  <div class="item">
+                      <img src="assets/images/mohamed.jpg" alt="Mohamednoor Maalim image" class="testimonial-image">
+                      <p>"Thanks to Medease Travels, I had rotator cuff surgery done in India after two failed procedures in Kenya, and I am very grateful for their services."</p>
+                      <span>- Mohamednoor Maalim, Mombasa</span>
+                  </div>
+                  <div class="item">
+                      <img src="assets/images/dahir.jpg" alt="Dahir Adan Mahad image" class="testimonial-image">
+                      <p>"Medease Travels helped me undergo cholecystectomy, where my gallbladder was removed laparoscopically, and I was discharged in 24 hrs!"</p>
+                      <span>- Dahir Adan Mahad, Nairobi</span>
+                  </div>
+                  <div class="item">
+                      <img src="assets/images/rahma.jpg" alt="Rahma Adhan Abdullah image" class="testimonial-image">
+                      <p>"Thanks to Medease Travels, I underwent a successful heart surgery in Delhi. Their support throughout the journey was incredible."</p>
+                      <span>- Rahma Adhan Abdullah, Nairobi</span>
+                  </div>
+                  <div class="item">
+                      <img src="assets/images/haji.jpg" alt="Hajj Issack image" class="testimonial-image">
+                      <p>"Medease helped us find the best neurologist for my son’s treatment. Their services were affordable and very professional."</p>
+                      <span>- Hajj Issack, Mandera</span>
+                  </div>
+              </div>
           </div>
-          <div class="item">
-            <img src="assets/images/dahir.jpg" alt="Dahir Adan Mahad image" class="testimonial-image">
-            <p>"Medease Travels helped me undergo cholecystectomy, where my gallbladder was removed laparoscopically, and I was discharged in 24 hrs!"</p>
-            <span>- Dahir Adan Mahad, Nairobi</span>
-          </div>
-          <div class="item">
-            <img src="assets/images/rahma.jpg" alt="Rahma Adhan Abdullah image" class="testimonial-image">
-            <p>"Thanks to Medease Travels, I underwent a successful heart surgery in Delhi. Their support throughout the journey was incredible."</p>
-            <span>- Rahma Adhan Abdullah, Nairobi</span>
-          </div>
-          <div class="item">
-            <img src="assets/images/haji.jpg" alt="Hajj Issack image" class="testimonial-image">
-            <p>"Medease helped us find the best neurologist for my son’s treatment. Their services were affordable and very professional."</p>
-            <span>- Hajj Issack, Mandera</span>
-          </div>
-        </div>
       </div>
-    </div>
   </div>
 </div>
 

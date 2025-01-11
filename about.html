@@ -2,126 +2,142 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>about us</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+    <title>About Us</title>
 
-    <title>MedEase Travels Medical Tourism</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
 
     <!-- Additional CSS Files -->
     <link rel="stylesheet" href="assets/css/fontawesome.css">
     <link rel="stylesheet" href="assets/css/templatemo-villa-agency.css">
     <link rel="stylesheet" href="assets/css/owl.css">
     <link rel="stylesheet" href="assets/css/animate.css">
-    <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
     <link rel="icon" type="image/x-icon" href="apple-touch-icon.png">
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-<script src="assets/js/custom.js"></script>
-
 </head>
 <body>
 
-  <!-- ** Preloader End ** -->
-
-  <div class="sub-header">
+<!-- Sub-header -->
+<div class="sub-header">
     <div class="container">
-      <div class="row">
-        <div class="col-lg-8 col-md-8">
-          <ul class="info">
-            <li><i class="fa fa-envelope" style="color:#01796f"></i> medeaseagency@gmail.com</li>
-            <li><i class="fa fa-map" style="color:#01796f"></i> Nairobi,Kenya </li>
-            <li></li><i class="fa fa-phone" style="color:#01796f"></i><i style="font-size: 10px;">  +254 723-334-445</i></li>
-          </ul>
+        <div class="row">
+            <div class="col-lg-8 col-md-8">
+                <ul class="info">
+                    <li><i class="fa fa-envelope" style="color:#01796f"></i> medeaseagency@gmail.com</li>
+                    <li><i class="fa fa-map" style="color:#01796f"></i> Nairobi, Kenya</li>
+                    <li><i class="fa fa-phone" style="color:#01796f"></i> <i style="font-size: 10px;">+254 723-334-445</i></li>
+                </ul>
+            </div>
+            <div class="col-lg-4 col-md-4">
+                <ul class="social-links">
+                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                    <li><a href="https://www.instagram.com/medease_travels/profilecard/?igsh=dGhkbzBrcWhrZXVo"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+            </div>
         </div>
-        <div class="col-lg-4 col-md-4">
-          <ul class="social-links" >
-            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-            <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
-            <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-            <li><a href="https://www.instagram.com/medease_travels/profilecard/?igsh=dGhkbzBrcWhrZXVo"><i class="fab fa-instagram"></i></a></li>
-          </ul>
-        </div>
-      </div>
     </div>
-  </div>
+</div>
 
-  
-<!-- ** Header Area Start ** -->
+<!-- Header Area -->
 <header class="header-area header-sticky">
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <nav class="main-nav">
-          <!-- ** Logo Start ** -->
-          <a href="index.html" class="logo">
-            <img src="medease logo.jpg" alt="logo" height="80" width="90">
-          </a>
-          <!-- ** Logo End ** -->
-          <!-- ** Menu Start ** -->
-          <ul class="nav">
-            <li><a href="index.html" >Home</a></li>
-            <li><a href="about.html" class="active">About us</a></li>
-            <li><a href="our-expertise.html">Our Expertise</a></li>
-            <li><a href="faq.html">FAQ</a></li>
-            <li><a href="processflow.html">Process flow</a></li>
-            <li><a href="schedule-appointment.html"><i class="fa fa-calendar"></i> Schedule an appointment</a></li>
-          </ul>
-          <a class="menu-trigger">
-            <span>Menu</span>
-          </a>
-          <!-- ** Menu End ** -->
-        </nav>
-      </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="main-nav">
+                    <!-- Logo -->
+                    <a href="index.html" class="logo">
+                        <img src="medease logo.jpg" alt="logo" height="80" width="90">
+                    </a>
+
+                    <!-- Menu Trigger for Mobile -->
+                    <a class="menu-trigger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </a>
+
+                    <!-- Navigation Links -->
+                    <div class="scrollable-nav">
+                        <ul class="nav">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html" class="active">About us</a></li>
+                            <li><a href="our-expertise.html">Our Expertise</a></li>
+                            <li><a href="faq.html">FAQ</a></li>
+                            <li><a href="processflow.html">Process flow</a></li>
+                            <li><a href="schedule-appointment.html"><i class="fa fa-calendar"></i> Schedule an appointment</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- JavaScript for Hamburger Menu -->
+                    <script>
+                        document.querySelector(".menu-trigger").addEventListener("click", function () {
+                            const nav = document.querySelector(".nav");
+                            nav.classList.toggle("active");
+                        });
+                    </script>
+                </nav>
+            </div>
+        </div>
     </div>
-  </div>
 </header>
 
-    <section class="about-section">
-        <h1>About Medease Travels</h1>
-        <p class="intro">
-          Medease Travels is a trusted partner for Kenyans seeking world-class medical care in India. We specialize in connecting patients to the finest healthcare facilities across India, ensuring access to affordable, high-quality medical services tailored to diverse needs. Our dedicated team provides comprehensive support throughout the medical journey, from selecting the right hospital to post-treatment care, making the entire process seamless and stress-free.
+<!-- About Section -->
+<section class="about-section">
+    <h1>About Medease Travels</h1>
+    <p class="intro">
+        Medease Travels is a trusted partner for Kenyans seeking world-class medical care in India. We specialize in connecting patients to the finest healthcare facilities across India, ensuring access to affordable, high-quality medical services tailored to diverse needs. Our dedicated team provides comprehensive support throughout the medical journey, from selecting the right hospital to post-treatment care, making the entire process seamless and stress-free.
+    </p>
+    <div class="sub-section">
+        <h2>Vision</h2>
+        <p>
+            To be the most trusted and preferred medical tourism company for Kenyan patients,
+            providing unparalleled access to world-class healthcare facilities and transforming lives
+            through quality and affordability.
         </p>
-        <div class="sub-section">
-          <h2>Vision</h2>
-          <p>
-              To be the most trusted and preferred medical tourism company for Kenyan patients,
-              providing unparalleled access to world-class healthcare facilities and transforming lives
-              through quality and affordability.
-          </p>
-      </div>
-      <div class="sub-section">
-          <h2>Mission</h2>
-          <p>
-              To simplify medical travel for Kenyan patients by offering comprehensive services, fostering
-              partnerships with leading healthcare providers in India, and ensuring a seamless, affordable,
-              and compassionate journey to better health.
-          </p>
-      </div>
-  </section>
+    </div>
+    <div class="sub-section">
+        <h2>Mission</h2>
+        <p>
+            To simplify medical travel for Kenyan patients by offering comprehensive services, fostering
+            partnerships with leading healthcare providers in India, and ensuring a seamless, affordable,
+            and compassionate journey to better health.
+        </p>
+    </div>
+</section>
 
-     
-      <footer class="footer">
-        <div class="container">
-          <div class="row">
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
             <div class="col-lg-6">
-              <div class="item phone">
-                <img src="assets/images/phone-icon.png" alt="Phone Icon" style="max-width: 40px;">
-                <h6>+254 723-334-445 <br><span>Phone Number</span></h6>
-              </div>
+                <div class="item phone">
+                    <img src="assets/images/phone-icon.png" alt="Phone Icon" style="max-width: 40px;">
+                    <h6>+254 723-334-445<br><span>Phone Number</span></h6>
+                </div>
             </div>
             <div class="col-lg-6">
-              <div class="item email">
-                <img src="assets/images/email-icon.png" alt="Email Icon" style="max-width: 40px;">
-                <h6><a href="mailto:medeaseagency@gmail.com" style="color: black;">medeaseagency@gmail.com</a><br><span>Business Email</span></h6>
-              </div>
+                <div class="item email">
+                    <img src="assets/images/email-icon.png" alt="Email Icon" style="max-width: 40px;">
+                    <h6><a href="mailto:medeaseagency@gmail.com" style="color: black;">medeaseagency@gmail.com</a><br><span>Business Email</span></h6>
+                </div>
             </div>
-          </div>
-          <p>&copy; 2024 Medease Travel Agency. All rights reserved.</p>
         </div>
-      </footer>
+        <p>&copy; 2024 Medease Travel Agency. All rights reserved.</p>
+    </div>
+</footer>
+
+<!-- Scripts -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="assets/js/isotope.min.js"></script>
+<script src="assets/js/owl-carousel.js"></script>
+<script src="assets/js/counter.js"></script>
+<script src="assets/js/custom.js"></script>
 </body>
 </html>
