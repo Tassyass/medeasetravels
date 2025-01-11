@@ -101,45 +101,45 @@
     // Initialize EmailJS with Public Key
     emailjs.init("x4WwsTu0QSwcmgAa2");
 
-    // Form Submission Handler
-    document.getElementById("schedule-form").addEventListener("submit", function (e) {
-      e.preventDefault();
+// Form Submission Handler
+document.getElementById("schedule-form").addEventListener("submit", function (e) {
+  e.preventDefault();
 
-      const name = document.getElementById("name").value;
-      const email = document.getElementById("email").value;
-      const mobile = document.getElementById("mobile").value;
-      const scheduleDate = document.getElementById("schedule-date").value;
-      const feedback = document.getElementById("form-feedback");
+  const name = document.getElementById("name").value;
+  const email = document.getElementById("email").value;
+  const mobile = document.getElementById("mobile").value;
+  const scheduleDate = document.getElementById("schedule-date").value;
+  const feedback = document.getElementById("form-feedback");
 
-      // Validation to ensure all fields are filled
-      if (!name || !email || !mobile || !scheduleDate) {
-        feedback.textContent = "Please fill in all fields.";
+  // Validation to ensure all fields are filled
+  if (!name || !email || !mobile || !scheduleDate) {
+    feedback.textContent = "Please fill in all fields.";
+    feedback.style.color = "red";
+    return;
+  }
+
+  // Send email using EmailJS
+  emailjs
+    .send("service_3kb43gv", "template_b1lhsgf", {
+      user_name: name,
+      user_email: email,
+      user_mobile: mobile,
+      schedule_date: scheduleDate,
+    })
+    .then(
+      () => {
+        feedback.textContent = `Your appointment has been successfully scheduled! We'll contact you at ${mobile}.`;
+        feedback.style.color = "green";
+        document.getElementById("schedule-form").reset();
+      },
+      (error) => {
+        console.error("EmailJS Error:", error);
+        feedback.textContent = "Failed to schedule the appointment. Please try again.";
         feedback.style.color = "red";
-        return;
       }
-
-      // Send email using EmailJS
-      emailjs
-        .send("service_3kb43gv", "template_b1lhsgf", {
-          user_name: name,
-          user_email: email,
-          user_mobile: mobile,
-          schedule_date: scheduleDate,
-        })
-        .then(
-          () => {
-            feedback.textContent = "Your appointment has been successfully scheduled!";
-            feedback.style.color = "green";
-            document.getElementById("schedule-form").reset();
-          },
-          (error) => {
-            console.error("EmailJS Error:", error);
-            feedback.textContent = "Failed to schedule the appointment. Please try again.";
-            feedback.style.color = "red";
-          }
-        );
-    });
-  </script>
+    );
+});
+</script>
 </body>
 
 </html>
