@@ -1,120 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Schedule an Appointment</title>
-
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-
-    <!-- Bootstrap Core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Additional CSS Files -->
-    <link rel="stylesheet" href="assets/css/fontawesome.css">
-    <link rel="stylesheet" href="assets/css/templatemo-villa-agency.css">
-    <link rel="stylesheet" href="assets/css/owl.css">
-    <link rel="stylesheet" href="assets/css/animate.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
-    <link rel="icon" type="image/x-icon" href="apple-touch-icon.png">
-
-    <!-- Custom CSS for Schedule Button -->
-    <style>
-        /* Schedule Appointment Button Styling */
-        .scrollable-nav li:last-child a {
-            display: inline-flex; /* Ensures proper alignment */
-            align-items: center; /* Vertically centers content */
-            justify-content: center; /* Horizontally centers content */
-            padding: 10px 20px; /* Balanced padding for a clean button look */
-            border: 2px solid #01796f; /* Teal border */
-            border-radius: 25px; /* Smooth rounded edges */
-            background-color: #01796f; /* Teal background */
-            color: #ffffff; /* White text for contrast */
-            font-weight: 600; /* Slightly bold text for emphasis */
-            font-size: 14px; /* Font size for readability */
-            text-align: center; /* Center-align text */
-            white-space: nowrap; /* Prevent text wrapping */
-            transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover effect */
-            height: 40px; /* Consistent height for alignment */
-            line-height: 40px; /* Ensures vertical alignment */
-        }
-
-        /* Hover State for the Button */
-        .scrollable-nav li:last-child a:hover {
-            background-color: #ffffff; /* White background on hover */
-            color: #01796f; /* Teal text color */
-            border-color: #01796f; /* Consistent teal border */
-        }
-
-        /* Icon Styling for the Button */
-        .scrollable-nav li:last-child a i.fa-calendar {
-            margin-right: 8px; /* Space between icon and text */
-            font-size: 18px; /* Ensure icon is properly sized */
-        }
-
-        /* Mobile-Specific Adjustments */
-        @media (max-width: 768px) {
-            .scrollable-nav li:last-child a {
-                width: 100%; /* Full-width button on mobile */
-                text-align: center; /* Center-align text */
-                display: block; /* Block-level button for mobile */
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Schedule an Appointment</title>
+  <!-- CSS Files -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/fontawesome.css">
+  <link rel="stylesheet" href="assets/css/templatemo-villa-agency.css">
+  <link rel="stylesheet" href="assets/css/owl.css">
+  <link rel="stylesheet" href="assets/css/animate.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="assets/js/custom.js"></script>
+  <link rel="icon" type="image/x-icon" href="apple-touch-icon.png">
 </head>
 <body>
-    <!-- Sub Header -->
-    <div class="sub-header">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-md-8">
-                    <ul class="info">
-                        <li><i class="fa fa-envelope" style="color:#01796f"></i> medeaseagency@gmail.com</li>
-                        <li><i class="fa fa-map" style="color:#01796f"></i> Nairobi, Kenya</li>
-                        <li><i class="fa fa-phone" style="color:#01796f"></i> +254 723-334-445</li>
-                    </ul>
-                </div>
-                <div class="col-lg-4 col-md-4">
-                    <ul class="social-links">
-                        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                        <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-                        <li><a href="https://www.instagram.com/medease_travels/profilecard/?igsh=dGhkbzBrcWhrZXVo"><i class="fab fa-instagram"></i></a></li>
-                    </ul>
-                </div>
-            </div>
+  <header class="header-area header-sticky">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="main-nav">
+            <!-- ** Logo Start ** -->
+            <a href="index.html" class="logo">
+              <img src="medease logo.jpg" alt="logo" height="80" width="90">
+            </a>
+            <!-- ** Logo End ** -->
+            <!-- ** Menu Start ** -->
+            <ul class="nav">
+              <li><a href="index.html" class="active">Home</a></li>
+              <li><a href="about.html">About us</a></li>
+              <li><a href="our-expertise.html">Our Expertise</a></li>
+              <li><a href="index.html#contt">Contact Us</a></li>
+              <li><a href="processflow.html">Process flow</a></li>
+              <li><a href="schedule-appointment.html"><i class="fa fa-calendar"></i> Schedule an appointment</a></li>
+            </ul>
+            <a class="menu-trigger">
+              <span>Menu</span>
+            </a>
+            <!-- ** Menu End ** -->
+          </nav>
         </div>
+      </div>
     </div>
-
-    <!-- Header -->
-    <header class="header-area header-sticky">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <nav class="main-nav">
-                        <!-- Logo -->
-                        <a href="index.html" class="logo">
-                            <img src="medease logo.jpg" alt="logo" height="80" width="90">
-                        </a>
-                        <!-- Navigation Menu -->
-                        <ul class="nav">
-                            <li><a href="index.html" class="active">Home</a></li>
-                            <li><a href="about.html">About Us</a></li>
-                            <li><a href="our-expertise.html">Our Expertise</a></li>
-                            <li><a href="index.html#contt">Contact Us</a></li>
-                            <li><a href="processflow.html">Process Flow</a></li>
-                            <li><a href="schedule-appointment.html"><i class="fa fa-calendar"></i> Schedule an Appointment</a></li>
-                        </ul>
-                        <!-- Menu Trigger for Mobile -->
-                        <a class="menu-trigger">
-                            <span>Menu</span>
-                        </a>
-                    </nav>
-                </div>
-            </div>
-        </div>
-    </header>
+  </header>
+  
 
     <!-- Main Content Section -->
     <section id="schedule" class="section">
@@ -162,40 +92,44 @@
     <script>
         emailjs.init("x4WwsTu0QSwcmgAa2");
 
-        document.getElementById("schedule-form").addEventListener("submit", function (e) {
-            e.preventDefault();
+    // Form Submission Handler
+    document.getElementById("schedule-form").addEventListener("submit", function (e) {
+      e.preventDefault();
 
-            const name = document.getElementById("name").value;
-            const email = document.getElementById("email").value;
-            const mobile = document.getElementById("mobile").value;
-            const scheduleDate = document.getElementById("schedule-date").value;
-            const feedback = document.getElementById("form-feedback");
+      const name = document.getElementById("name").value;
+      const email = document.getElementById("email").value;
+      const mobile = document.getElementById("mobile").value;
+      const scheduleDate = document.getElementById("schedule-date").value;
+      const feedback = document.getElementById("form-feedback");
 
-            if (!name || !email || !mobile || !scheduleDate) {
-                feedback.textContent = "Please fill in all fields.";
-                feedback.style.color = "red";
-                return;
-            }
+      // Validation to ensure all fields are filled
+      if (!name || !email || !mobile || !scheduleDate) {
+        feedback.textContent = "Please fill in all fields.";
+        feedback.style.color = "red";
+        return;
+      }
 
-            emailjs.send("service_3kb43gv", "template_b1lhsgf", {
-                user_name: name,
-                user_email: email,
-                user_mobile: mobile,
-                schedule_date: scheduleDate,
-            })
-            .then(
-                () => {
-                    feedback.textContent = "Your appointment has been successfully scheduled!";
-                    feedback.style.color = "green";
-                    document.getElementById("schedule-form").reset();
-                },
-                (error) => {
-                    console.error("EmailJS Error:", error);
-                    feedback.textContent = "Failed to schedule the appointment. Please try again.";
-                    feedback.style.color = "red";
-                }
-            );
-        });
-    </script>
+      // Send email using EmailJS
+      emailjs
+        .send("service_3kb43gv", "template_b1lhsgf", {
+          user_name: name,
+          user_email: email,
+          user_mobile: mobile,
+          schedule_date: scheduleDate,
+        })
+        .then(
+          () => {
+            feedback.textContent = "Your appointment has been successfully scheduled!";
+            feedback.style.color = "green";
+            document.getElementById("schedule-form").reset();
+          },
+          (error) => {
+            console.error("EmailJS Error:", error);
+            feedback.textContent = "Failed to schedule the appointment. Please try again.";
+            feedback.style.color = "red";
+          }
+        );
+    });
+  </script>
 </body>
 </html>

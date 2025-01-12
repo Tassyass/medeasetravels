@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
     <title>Process Flow</title>
 
-    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
     <!-- Bootstrap core CSS -->
@@ -17,125 +15,100 @@
     <link rel="stylesheet" href="assets/css/templatemo-villa-agency.css">
     <link rel="stylesheet" href="assets/css/owl.css">
     <link rel="stylesheet" href="assets/css/animate.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+    <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
     <link rel="icon" type="image/x-icon" href="apple-touch-icon.png">
 
-    <!-- Custom CSS for Schedule Button -->
-    <style>
-        /* Schedule Appointment Button Styling */
-        .scrollable-nav li:last-child a {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            padding: 10px 20px;
-            border: 2px solid #01796f;
-            border-radius: 25px;
-            background-color: #01796f;
-            color: #ffffff;
-            font-weight: 600;
-            font-size: 14px;
-            text-align: center;
-            white-space: nowrap;
-            transition: background-color 0.3s ease, color 0.3s ease;
-            height: 40px;
-            line-height: 40px;
-        }
+  </head>
 
-        .scrollable-nav li:last-child a:hover {
-            background-color: #ffffff;
-            color: #01796f;
-            border-color: #01796f;
-        }
 
-        .scrollable-nav li:last-child a i.fa-calendar {
-            margin-right: 8px;
-            font-size: 18px;
-        }
-
-        @media (max-width: 768px) {
-            .scrollable-nav li:last-child a {
-                width: 100%;
-                text-align: center;
-                display: block;
-            }
-        }
-    </style>
-</head>
-
+  
 <body>
-    <!-- Preloader -->
-    <div id="js-preloader" class="js-preloader">
-        <div class="preloader-inner">
-            <span class="dot"></span>
-            <div class="dots">
-                <span></span>
-                <span></span>
-                <span></span>
+
+  <!-- ** Preloader Start ** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- ** Preloader End ** -->
+
+  <div class="sub-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-8">
+          <ul class="info">
+            <li><i class="fa fa-envelope" style="color:#01796f"></i> medeaseagency@gmail.com</li>
+            <li><i class="fa fa-map" style="color:#01796f"></i> Nairobi,Kenya </li>
+            <li></li><i class="fa fa-phone" style="color:#01796f"></i><i style="font-size: 10px;">  +254 723-334-445</i></li>
+          </ul>
+        </div>
+       
+      </div>
+    </div>
+  </div>
+
+  <!-- ** Header Area Start ** -->
+  <header class="header-area header-sticky">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="main-nav">
+            <!-- Logo -->
+            <a href="index.html" class="logo">
+              <img src="medease logo.jpg" alt="logo" height="80" width="90">
+            </a>
+  
+            <!-- Menu Trigger for Mobile -->
+            <a class="menu-trigger">
+              <span></span>
+              <span></span>
+              <span></span>
+            </a>
+  
+            <!-- Navigation Links -->
+            <ul class="nav">
+              <li><a href="index.html" class="active">Home</a></li>
+              <li><a href="about.html">About us</a></li>
+              <li><a href="our-expertise.html">Our Expertise</a></li>
+              <li><a href="faq.html">FAQ</a></li>
+              <li><a href="processflow.html">Process flow</a></li>
+              <li><a href="schedule-appointment.html"><i class="fa fa-calendar"></i> Schedule an appointment</a></li>
+            </ul>
+      </div>
+
+                    <!-- JavaScript for Hamburger Menu -->
+                    <script>
+                        document.querySelector(".menu-trigger").addEventListener("click", function () {
+                            const nav = document.querySelector(".nav");
+                            nav.classList.toggle("active");
+                        });
+                    </script>
+                </nav>
             </div>
         </div>
     </div>
+</header>
 
-    <!-- Sub-header -->
-    <div class="sub-header">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-md-8">
-                    <ul class="info">
-                        <li><i class="fa fa-envelope" style="color:#01796f"></i> medeaseagency@gmail.com</li>
-                        <li><i class="fa fa-map" style="color:#01796f"></i> Nairobi, Kenya</li>
-                        <li><i class="fa fa-phone" style="color:#01796f"></i> +254 723-334-445</li>
-                    </ul>
-                </div>
-            </div>
+<!-- Page Content -->
+<div class="process-flow">
+  <section class="process-flowp">
+    <h1 class="hpf">Patient - Process Flow</h1>
+    <div class="stepsp">
+      <!-- Step 1 -->
+      <div class="stepp">
+        <div class="contentp">
+          <h2>Step 1 - CONTACT</h2>
+          <p>📞 Reach out to the Medease Hospital Travel Agency. Our case management team will respond within 24 hours.</p>
         </div>
-    </div>
+        <div class="arrowp">⬇️</div>
+      </div>
 
-    <!-- Header Area -->
-    <header class="header-area header-sticky">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <nav class="main-nav">
-                        <!-- Logo -->
-                        <a href="index.html" class="logo">
-                            <img src="medease logo.jpg" alt="logo" height="80" width="90">
-                        </a>
-
-                        <!-- Navigation Links -->
-                        <ul class="nav">
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="about.html">About Us</a></li>
-                            <li><a href="our-expertise.html">Our Expertise</a></li>
-                            <li><a href="faq.html">FAQ</a></li>
-                            <li><a href="processflow.html" class="active">Process Flow</a></li>
-                            <li><a href="schedule-appointment.html"><i class="fa fa-calendar"></i> Schedule an Appointment</a></li>
-                        </ul>
-
-                        <!-- Menu Trigger for Mobile -->
-                        <a class="menu-trigger">
-                            <span>Menu</span>
-                        </a>
-                    </nav>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <!-- Page Content -->
-    <div class="process-flow">
-        <section class="process-flowp">
-            <h1 class="hpf">Patient - Process Flow</h1>
-            <div class="stepsp">
-                <!-- Step 1 -->
-                <div class="stepp">
-                    <div class="contentp">
-                        <h2>Step 1 - CONTACT</h2>
-                        <p>📞 Reach out to the Medease Hospital Travel Agency. Our case management team will respond within 24 hours.</p>
-                    </div>
-                    <div class="arrowp">⬇️</div>
-                </div>
-
-        <!-- Step 2 -->
+      <!-- Step 2 -->
       <div class="stepp">
         <div class="contentp">
           <h2>Step 2 - CONSULTATION PRIOR TO YOUR VISIT </h2>
@@ -226,34 +199,33 @@
   </section>
  
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="item phone">
-                        <img src="assets/images/phone-icon.png" alt="Phone Icon" style="max-width: 40px;">
-                        <h6>+254 723-334-445<br><span>Phone Number</span></h6>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="item email">
-                        <img src="assets/images/email-icon.png" alt="Email Icon" style="max-width: 40px;">
-                        <h6><a href="mailto:medeaseagency@gmail.com" style="color: black;">medeaseagency@gmail.com</a><br><span>Business Email</span></h6>
-                    </div>
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="item phone">
+                    <img src="assets/images/phone-icon.png" alt="Phone Icon" style="max-width: 40px;">
+                    <h6>+254 723-334-445<br><span>Phone Number</span></h6>
                 </div>
             </div>
-            <p>&copy; 2024 Medease Travel Agency. All rights reserved.</p>
+            <div class="col-lg-6">
+                <div class="item email">
+                    <img src="assets/images/email-icon.png" alt="Email Icon" style="max-width: 40px;">
+                    <h6><a href="mailto:medeaseagency@gmail.com" style="color: black;">medeaseagency@gmail.com</a><br><span>Business Email</span></h6>
+                </div>
+            </div>
         </div>
-    </footer>
+        <p>&copy; 2024 Medease Travel Agency. All rights reserved.</p>
+    </div>
+</footer>
 
-    <!-- Scripts -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/isotope.min.js"></script>
-    <script src="assets/js/owl-carousel.js"></script>
-    <script src="assets/js/counter.js"></script>
-    <script src="assets/js/custom.js"></script>
+<!-- Scripts -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="assets/js/isotope.min.js"></script>
+<script src="assets/js/owl-carousel.js"></script>
+<script src="assets/js/counter.js"></script>
+<script src="assets/js/custom.js"></script>
 </body>
-
 </html>

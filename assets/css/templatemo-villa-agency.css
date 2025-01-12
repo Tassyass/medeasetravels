@@ -561,100 +561,39 @@ footer.footer a:hover {
   margin-bottom: 10px;
 }
 
-/* Navbar Adjustments */
-.scrollable-nav ul {
-  display: flex; /* Ensures proper alignment */
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  justify-content: flex-end; /* Aligns navbar items to the right */
-}
 
-.scrollable-nav a {
-  text-decoration: none;
-  padding: 10px 20px;
-  display: inline-block;
-  color: #000; /* Default text color */
-  transition: color 0.3s ease, border-bottom 0.3s ease;
-}
 
-.scrollable-nav a:hover {
-  color: #01796f; /* Hover color for links */
-  border-bottom: 2px solid #01796f;
-}
-
-.scrollable-nav a.active {
-  font-weight: bold;
-  border-bottom: 2px solid #01796f; /* Highlights active link */
-}
-
-/* General Styling for Buttons */
+/* "Schedule Appointment" Button Specific Styling */
 .scrollable-nav a i.fa-calendar {
-  margin-right: 5px; /* Space between icon and text */
+  margin-right: 8px;
 }
 
 .scrollable-nav li:last-child a {
-  padding: 8px 20px; /* Balanced padding */
-  border: 2px solid #003366; /* Dark blue border */
-  border-radius: 8px; /* Slightly rounded corners */
-  background-color: #003366; /* Dark blue background */
-  color: #ffffff; /* White text for contrast */
-  font-weight: 600; /* Bold text for emphasis */
-  font-size: 14px; /* Font size for readability */
-  text-align: center; /* Center text alignment */
-  white-space: nowrap; /* Prevent text wrapping */
-  display: inline-block; /* Ensure proper button alignment */
-  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover transition */
-}
-
-/* Hover State for Buttons */
-.scrollable-nav li:last-child a:hover {
-  background-color: #ffffff; /* White background on hover */
-  color: #003366; /* Dark blue text on hover */
-  border-color: #003366; /* Keep border consistent */
-}
-
-/* Mobile-Specific Adjustments */
-@media (max-width: 768px) {
-  .scrollable-nav li:last-child a {
-    width: 100%; /* Full-width button on small screens */
-    text-align: center; /* Center text */
-    display: block; /* Block-level layout for responsive design */
-  }
-}
-
-
-/* Schedule Appointment Button Styling */
-.scrollable-nav li:last-child a {
-  display: flex; /* Align icon and text properly */
-  align-items: center; /* Vertically center the content */
-  justify-content: center; /* Horizontally center the content */
-  padding: 8px 20px; /* Adjust padding for a better fit */
+  padding: 10px 20px; /* Balanced padding for text fitting */
   border: 2px solid #01796f; /* Teal border */
-  border-radius: 50px; /* Rounded edges */
+  border-radius: 25px; /* Smooth rounded edges */
   background-color: #01796f; /* Teal background */
   color: #ffffff; /* White text */
-  font-weight: 600; /* Slightly bold text */
-  font-size: 14px; /* Font size for readability */
-  text-align: center; /* Center text */
-  white-space: nowrap; /* Prevent text wrapping */
-  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover effect */
-  height: 40px; /* Set a fixed height for proper alignment */
-  line-height: 40px; /* Match line-height to height for vertical alignment */
+  font-weight: 600; /* Slightly bolder text for emphasis */
+  font-size: 14px; /* Adjusted font size for readability */
+  text-align: center; /* Center the text */
+  white-space: nowrap; /* Prevent wrapping of text */
+  transition: all 0.3s ease; /* Smooth hover transition */
 }
 
-/* Hover State */
 .scrollable-nav li:last-child a:hover {
-  background-color: #ffffff; /* White background on hover */
+  background-color: #ffffff; /* Switch to white background on hover */
   color: #01796f; /* Teal text color */
-  border-color: #01796f; /* Maintain border color */
+  border-color: #01796f; /* Teal border remains */
 }
 
-/* Icon Styling */
-.scrollable-nav li:last-child a i.fa-calendar {
-  margin-right: 8px; /* Spacing between icon and text */
+@media (max-width: 768px) {
+  .scrollable-nav li:last-child a {
+    width: 100%; /* Full width button */
+    text-align: center; /* Center the text */
+    display: block; /* Ensures block-level behavior */
+  }
 }
-
 
 
 /* Responsive Navbar for Smaller Screens */
@@ -2503,4 +2442,3 @@ body {
     margin-right: 100px;
   }
 }
-

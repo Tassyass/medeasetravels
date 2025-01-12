@@ -2,11 +2,8 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
-    <title>Process Flow</title>
-
-    <!-- Google Fonts -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
     <!-- Bootstrap core CSS -->
@@ -17,28 +14,21 @@
     <link rel="stylesheet" href="assets/css/templatemo-villa-agency.css">
     <link rel="stylesheet" href="assets/css/owl.css">
     <link rel="stylesheet" href="assets/css/animate.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
-    <link rel="icon" type="image/x-icon" href="apple-touch-icon.png">
+    <!-- Bootstrap CSS -->
+<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom CSS for Schedule Button -->
+<!-- Bootstrap JavaScript and Dependencies -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
     <style>
-        /* Schedule Appointment Button Styling */
-        .scrollable-nav li:last-child a {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            padding: 10px 20px;
-            border: 2px solid #01796f;
-            border-radius: 25px;
-            background-color: #01796f;
-            color: #ffffff;
-            font-weight: 600;
-            font-size: 14px;
-            text-align: center;
-            white-space: nowrap;
-            transition: background-color 0.3s ease, color 0.3s ease;
-            height: 40px;
-            line-height: 40px;
+        .expertise-item img {
+            max-width: 100%; /* Responsive width */
+            height: 150px; /* Adjusted height */
+            object-fit: cover; /* Crops to fit */
+            border-radius: 10px; /* Rounded corners */
+            margin-bottom: 15px; /* Spacing below the image */
         }
 
         .scrollable-nav li:last-child a:hover {
@@ -63,63 +53,35 @@
 </head>
 
 <body>
-    <!-- Preloader -->
-    <div id="js-preloader" class="js-preloader">
-        <div class="preloader-inner">
-            <span class="dot"></span>
-            <div class="dots">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </div>
-
-    <!-- Sub-header -->
-    <div class="sub-header">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-md-8">
-                    <ul class="info">
-                        <li><i class="fa fa-envelope" style="color:#01796f"></i> medeaseagency@gmail.com</li>
-                        <li><i class="fa fa-map" style="color:#01796f"></i> Nairobi, Kenya</li>
-                        <li><i class="fa fa-phone" style="color:#01796f"></i> +254 723-334-445</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Header Area -->
     <header class="header-area header-sticky">
         <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <nav class="main-nav">
-                        <!-- Logo -->
-                        <a href="index.html" class="logo">
-                            <img src="medease logo.jpg" alt="logo" height="80" width="90">
-                        </a>
-
-                        <!-- Navigation Links -->
-                        <ul class="nav">
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="about.html">About Us</a></li>
-                            <li><a href="our-expertise.html">Our Expertise</a></li>
-                            <li><a href="faq.html">FAQ</a></li>
-                            <li><a href="processflow.html" class="active">Process Flow</a></li>
-                            <li><a href="schedule-appointment.html"><i class="fa fa-calendar"></i> Schedule an Appointment</a></li>
-                        </ul>
-
-                        <!-- Menu Trigger for Mobile -->
-                        <a class="menu-trigger">
-                            <span>Menu</span>
-                        </a>
-                    </nav>
-                </div>
+          <div class="row">
+            <div class="col-12">
+              <nav class="main-nav">
+                <!-- ** Logo Start ** -->
+                <a href="index.html" class="logo">
+                  <img src="medease logo.jpg" alt="logo" height="80" width="90">
+                </a>
+                <!-- ** Logo End ** -->
+                <!-- ** Menu Start ** -->
+                <ul class="nav">
+                  <li><a href="index.html" class="active">Home</a></li>
+                  <li><a href="about.html">About us</a></li>
+                  <li><a href="our-expertise.html">Our Expertise</a></li>
+                  <li><a href="index.html#contt">Contact Us</a></li>
+                  <li><a href="processflow.html">Process flow</a></li>
+                  <li><a href="schedule-appointment.html"><i class="fa fa-calendar"></i> Schedule an appointment</a></li>
+                </ul>
+                <a class="menu-trigger">
+                  <span>Menu</span>
+                </a>
+                <!-- ** Menu End ** -->
+              </nav>
             </div>
+          </div>
         </div>
-    </header>
+      </header>
+      
 
 <div class="container mt-5">
     <div class="section-heading text-center">
