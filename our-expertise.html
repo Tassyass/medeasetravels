@@ -2,8 +2,11 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+    <title>Our Expertise - MedEase Travels</title>
+
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
     <!-- Bootstrap core CSS -->
@@ -14,74 +17,102 @@
     <link rel="stylesheet" href="assets/css/templatemo-villa-agency.css">
     <link rel="stylesheet" href="assets/css/owl.css">
     <link rel="stylesheet" href="assets/css/animate.css">
-    <!-- Bootstrap CSS -->
-<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-<!-- Bootstrap JavaScript and Dependencies -->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
-<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="apple-touch-icon.png">
 
     <style>
         .expertise-item img {
-            max-width: 100%; /* Responsive width */
-            height: 150px; /* Adjusted height */
-            object-fit: cover; /* Crops to fit */
-            border-radius: 10px; /* Rounded corners */
-            margin-bottom: 15px; /* Spacing below the image */
+            max-width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 15px;
         }
 
-        .scrollable-nav li:last-child a:hover {
-            background-color: #ffffff;
+        .expertise-item {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .expertise-item h3 {
             color: #01796f;
-            border-color: #01796f;
         }
 
-        .scrollable-nav li:last-child a i.fa-calendar {
-            margin-right: 8px;
-            font-size: 18px;
-        }
-
-        @media (max-width: 768px) {
-            .scrollable-nav li:last-child a {
-                width: 100%;
-                text-align: center;
-                display: block;
-            }
+        .expertise-item p {
+            color: #555;
         }
     </style>
 </head>
 
 <body>
-    <header class="header-area header-sticky">
-        <div class="container">
-          <div class="row">
-            <div class="col-12">
-              <nav class="main-nav">
-                <!-- ** Logo Start ** -->
-                <a href="index.html" class="logo">
-                  <img src="medease logo.jpg" alt="logo" height="80" width="90">
-                </a>
-                <!-- ** Logo End ** -->
-                <!-- ** Menu Start ** -->
-                <ul class="nav">
-                  <li><a href="index.html" class="active">Home</a></li>
-                  <li><a href="about.html">About us</a></li>
-                  <li><a href="our-expertise.html">Our Expertise</a></li>
-                  <li><a href="faq.html">FAQ</a></li>
-                  <li><a href="processflow.html">Process flow</a></li>
-                  <li><a href="schedule-appointment.html"><i class="fa fa-calendar"></i> Schedule an appointment</a></li>
+
+<!-- Sub-header -->
+<div class="sub-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-8">
+                <ul class="info">
+                    <li><i class="fa fa-envelope" style="color:#01796f"></i> medeaseagency@gmail.com</li>
+                    <li><i class="fa fa-map" style="color:#01796f"></i> Nairobi, Kenya</li>
+                    <li><i class="fa fa-phone" style="color:#01796f"></i> <i style="font-size: 10px;">+254 723-334-445</i></li>
                 </ul>
-                <a class="menu-trigger">
-                  <span>Menu</span>
-                </a>
-                <!-- ** Menu End ** -->
-              </nav>
             </div>
-          </div>
+            <div class="col-lg-4 col-md-4">
+                <ul class="social-links">
+                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                    <li><a href="https://www.instagram.com/medease_travels/profilecard/?igsh=dGhkbzBrcWhrZXVo"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+            </div>
         </div>
-      </header>
-      
+    </div>
+</div>
+
+<!-- Header Area -->
+<header class="header-area header-sticky">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="main-nav">
+                    <!-- Logo -->
+                    <a href="index.html" class="logo">
+                        <img src="medease logo.jpg" alt="logo" height="80" width="90">
+                    </a>
+
+                    <!-- Menu Trigger for Mobile -->
+                    <a class="menu-trigger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </a>
+
+                    <!-- Navigation Links -->
+                    <div class="scrollable-nav">
+                        <ul class="nav">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About us</a></li>
+                            <li><a href="our-expertise.html" class="active">Our Expertise</a></li>
+                            <li><a href="faq.html">FAQ</a></li>
+                            <li><a href="processflow.html">Process flow</a></li>
+                            <li><a href="schedule-appointment.html"><i class="fa fa-calendar"></i> Schedule an appointment</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- JavaScript for Hamburger Menu -->
+                    <script>
+                        document.querySelector(".menu-trigger").addEventListener("click", function () {
+                            const nav = document.querySelector(".nav");
+                            nav.classList.toggle("active");
+                        });
+                    </script>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
 
 <div class="container mt-5">
     <div class="section-heading text-center">

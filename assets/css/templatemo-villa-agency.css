@@ -561,7 +561,32 @@ footer.footer a:hover {
   margin-bottom: 10px;
 }
 
+/* Navbar Adjustments */
+.scrollable-nav ul {
+  display: flex; /* Ensures proper alignment */
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  justify-content: flex-end; /* Aligns navbar items to the right */
+}
 
+.scrollable-nav a {
+  text-decoration: none;
+  padding: 10px 20px;
+  display: inline-block;
+  color: #000; /* Default text color */
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+.scrollable-nav a:hover {
+  color: #01796f; /* Hover color for links */
+  border-bottom: 2px solid #01796f;
+}
+
+.scrollable-nav a.active {
+  font-weight: bold;
+  border-bottom: 2px solid #01796f; /* Highlights active link */
+}
 
 /* "Schedule Appointment" Button Specific Styling */
 .scrollable-nav a i.fa-calendar {
