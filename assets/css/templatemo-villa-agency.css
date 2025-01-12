@@ -481,8 +481,8 @@ footer.footer a:hover {
 
 
 .testimonial-image {
-  width: 150px; /* Fixed square width */
-  height: 150px; /* Fixed square height */
+  width: 1000px; /* Fixed square width */
+  height: 1000px; /* Fixed square height */
   border-radius: 0; /* No rounding for perfect square */
   object-fit: contain; /* Ensures the entire image fits within the square */
   background-color: #f9f9f9; /* Optional: Adds a light background color for empty space */
@@ -514,8 +514,8 @@ footer.footer a:hover {
   }
 
   .testimonials .item img {
-    width: 100px;
-    height: 100px;
+    max-width: 100%;
+    max-height: 100%;
   }
 }
 
@@ -547,6 +547,259 @@ footer.footer a:hover {
     margin: 10px;
   }
 }
+
+#why-choose-medease {
+  padding: 60px 0; /* Add vertical spacing */
+  background-color: #f9f9f9; /* Light background for the section */
+}
+
+#why-choose-medease .section-heading h6 {
+  color: #01796f; /* Accent color */
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+/* Navbar Adjustments */
+.scrollable-nav ul {
+  display: flex; /* Ensures proper alignment */
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  justify-content: flex-end; /* Aligns navbar items to the right */
+}
+
+.scrollable-nav a {
+  text-decoration: none;
+  padding: 10px 20px;
+  display: inline-block;
+  color: #000; /* Default text color */
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+.scrollable-nav a:hover {
+  color: #01796f; /* Hover color for links */
+  border-bottom: 2px solid #01796f;
+}
+
+.scrollable-nav a.active {
+  font-weight: bold;
+  border-bottom: 2px solid #01796f; /* Highlights active link */
+}
+
+/* General Styling for Buttons */
+.scrollable-nav a i.fa-calendar {
+  margin-right: 5px; /* Space between icon and text */
+}
+
+.scrollable-nav li:last-child a {
+  padding: 8px 20px; /* Balanced padding */
+  border: 2px solid #003366; /* Dark blue border */
+  border-radius: 8px; /* Slightly rounded corners */
+  background-color: #003366; /* Dark blue background */
+  color: #ffffff; /* White text for contrast */
+  font-weight: 600; /* Bold text for emphasis */
+  font-size: 14px; /* Font size for readability */
+  text-align: center; /* Center text alignment */
+  white-space: nowrap; /* Prevent text wrapping */
+  display: inline-block; /* Ensure proper button alignment */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover transition */
+}
+
+/* Hover State for Buttons */
+.scrollable-nav li:last-child a:hover {
+  background-color: #ffffff; /* White background on hover */
+  color: #003366; /* Dark blue text on hover */
+  border-color: #003366; /* Keep border consistent */
+}
+
+/* Mobile-Specific Adjustments */
+@media (max-width: 768px) {
+  .scrollable-nav li:last-child a {
+    width: 100%; /* Full-width button on small screens */
+    text-align: center; /* Center text */
+    display: block; /* Block-level layout for responsive design */
+  }
+}
+
+
+/* Schedule Appointment Button Styling */
+.scrollable-nav li:last-child a {
+  display: flex; /* Align icon and text properly */
+  align-items: center; /* Vertically center the content */
+  justify-content: center; /* Horizontally center the content */
+  padding: 8px 20px; /* Adjust padding for a better fit */
+  border: 2px solid #01796f; /* Teal border */
+  border-radius: 50px; /* Rounded edges */
+  background-color: #01796f; /* Teal background */
+  color: #ffffff; /* White text */
+  font-weight: 600; /* Slightly bold text */
+  font-size: 14px; /* Font size for readability */
+  text-align: center; /* Center text */
+  white-space: nowrap; /* Prevent text wrapping */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover effect */
+  height: 40px; /* Set a fixed height for proper alignment */
+  line-height: 40px; /* Match line-height to height for vertical alignment */
+}
+
+/* Hover State */
+.scrollable-nav li:last-child a:hover {
+  background-color: #ffffff; /* White background on hover */
+  color: #01796f; /* Teal text color */
+  border-color: #01796f; /* Maintain border color */
+}
+
+/* Icon Styling */
+.scrollable-nav li:last-child a i.fa-calendar {
+  margin-right: 8px; /* Spacing between icon and text */
+}
+
+
+
+/* Responsive Navbar for Smaller Screens */
+@media (max-width: 768px) {
+  .scrollable-nav ul {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .scrollable-nav li {
+      margin-bottom: 10px;
+  }
+
+  .scrollable-nav a {
+      padding: 10px;
+      text-align: left;
+  }
+
+  .scrollable-nav li:last-child a {
+      width: 100%; /* Button spans full width on mobile */
+      text-align: center;
+  }
+}
+
+
+/* Patient Testimonials Images */
+.testimonial-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.owl-carousel .item {
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .testimonial-image {
+      max-width: 80%; /* Adjusted for mobile view */
+  }
+}
+
+
+
+
+
+#why-choose-medease .section-heading h2 {
+  color: #333; /* Darker text for heading */
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.why-choose-box {
+  background-color: #ffffff; /* White box background */
+  border: 1px solid #ddd; /* Light border for the box */
+  border-radius: 8px; /* Rounded corners */
+  padding: 20px 30px; /* Inner spacing */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.why-choose-box ol {
+  list-style-type: decimal; /* Numbered list */
+  margin: 0;
+  padding-left: 20px; /* Indent the numbers */
+  color: #555; /* Softer text color */
+  font-size: 16px; /* Adjust font size */
+  line-height: 1.8; /* Add line spacing for readability */
+}
+
+.why-choose-box ol li {
+  margin-bottom: 15px; /* Space between list items */
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+/* Default: Navbar on top for larger screens */
+.scrollable-nav {
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.scrollable-nav ul {
+  display: inline-flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.scrollable-nav li {
+  margin-right: 20px;
+}
+
+.scrollable-nav a {
+  text-decoration: none;
+  padding: 10px 15px;
+  display: inline-block;
+  color: #000;
+}
+
+.scrollable-nav a.active {
+  font-weight: bold;
+  border-bottom: 2px solid #01796f;
+}
+
+.menu-trigger {
+  display: none;
+  cursor: pointer;
+}
+
+.menu-trigger span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  background-color: #000;
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .menu-trigger {
+    display: block;
+  }
+
+  .nav {
+    display: none;
+    flex-direction: column;
+    background-color: #fff;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    padding: 10px 0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav.active {
+    display: flex;
+  }
+}
+
 
 
 
@@ -1627,6 +1880,9 @@ process flow
 SERVICES WE OFFER
 --------------------------------------------- 
 */
+.expertise-item img{
+  background-color: red;
+}
 .heads{
   background-color: #005555;
   color: white;
@@ -1658,7 +1914,7 @@ main {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 .service ul{
-  font-size: 0.3rem;
+  font-size: 0.9rem;
 }
 
 .service h2 {
@@ -2247,3 +2503,4 @@ body {
     margin-right: 100px;
   }
 }
+

@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+    <title>Process Flow</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-villa-agency.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+    <link rel="icon" type="image/x-icon" href="apple-touch-icon.png">
+
+    <!-- Custom CSS for Schedule Button -->
+    <style>
+        /* Schedule Appointment Button Styling */
+        .scrollable-nav li:last-child a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px 20px;
+            border: 2px solid #01796f;
+            border-radius: 25px;
+            background-color: #01796f;
+            color: #ffffff;
+            font-weight: 600;
+            font-size: 14px;
+            text-align: center;
+            white-space: nowrap;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            height: 40px;
+            line-height: 40px;
+        }
+
+        .scrollable-nav li:last-child a:hover {
+            background-color: #ffffff;
+            color: #01796f;
+            border-color: #01796f;
+        }
+
+        .scrollable-nav li:last-child a i.fa-calendar {
+            margin-right: 8px;
+            font-size: 18px;
+        }
+
+        @media (max-width: 768px) {
+            .scrollable-nav li:last-child a {
+                width: 100%;
+                text-align: center;
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div id="js-preloader" class="js-preloader">
+        <div class="preloader-inner">
+            <span class="dot"></span>
+            <div class="dots">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sub-header -->
+    <div class="sub-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-8">
+                    <ul class="info">
+                        <li><i class="fa fa-envelope" style="color:#01796f"></i> medeaseagency@gmail.com</li>
+                        <li><i class="fa fa-map" style="color:#01796f"></i> Nairobi, Kenya</li>
+                        <li><i class="fa fa-phone" style="color:#01796f"></i> +254 723-334-445</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header Area -->
+    <header class="header-area header-sticky">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <!-- Logo -->
+                        <a href="index.html" class="logo">
+                            <img src="medease logo.jpg" alt="logo" height="80" width="90">
+                        </a>
+
+                        <!-- Navigation Links -->
+                        <ul class="nav">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="our-expertise.html">Our Expertise</a></li>
+                            <li><a href="faq.html">FAQ</a></li>
+                            <li><a href="processflow.html" class="active">Process Flow</a></li>
+                            <li><a href="schedule-appointment.html"><i class="fa fa-calendar"></i> Schedule an Appointment</a></li>
+                        </ul>
+
+                        <!-- Menu Trigger for Mobile -->
+                        <a class="menu-trigger">
+                            <span>Menu</span>
+                        </a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+<!-- FAQ Section -->
+<section class="faq-section">
+    <div class="container">
+        <h1 class="text-center">Frequently Asked Questions</h1>
+        <div class="faq-container">
+            <!-- FAQ Item -->
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleAnswer(this)">
+                    <span class="arrow">&#9660;</span>
+                    Is it safe to have a medical procedure abroad?
+                </button>
+                <div class="faq-answer">
+                    <p>Travelling abroad for a medical procedure can be safe if you research with due diligence!</p>
+                    <p>At <strong>Medease Travel</strong>, we handle this research for you to ensure a seamless experience. Here's what we offer:</p>
+                    <ul>
+                        <li>We partner with reputable hospitals/clinics worldwide known for serving international medical tourists.</li>
+                        <li>The hospitals/clinics are situated in safe, well-populated areas adhering to strict sterilization and security protocols.</li>
+                        <li>Medease maintains rigorous quality checks to ensure high standards of care.</li>
+                        <li>Patient feedback is valued, enabling us to recommend the safest medical facilities.</li>
+                    </ul>
+                </div>
+            </div>
+
+           <!-- FAQ 2 -->
+           <div class="faq-item">
+            <button class="faq-question" onclick="toggleAnswer(this)">
+                <span class="arrow">&#9660;</span>
+                Where can I stay?
+            </button>
+            <div class="faq-answer">
+                <p>Many of our partnered hospitals offer excellent hotel recommendations nearby. Additionally, some provide discounted or complimentary stays for patients, along with perks like free pick-up and drop-off services and discount coupons for added convenience.</p>
+                <p>Moreover, there are various accommodation options available, including resorts and Airbnb.</p>
+                <p>With Medease, you can enjoy stress-free medical treatment and a seamless stay experience.</p>
+            </div>
+        </div>
+  
+        <!-- FAQ 3 -->
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleAnswer(this)">
+                <span class="arrow">&#9660;</span>
+                What documents are required to travel?
+            </button>
+            <div class="faq-answer">
+                <p>For travelers undergoing medical treatment abroad, it's advisable to have the following documents handy:</p>
+                <ul>
+                    <li>Photo ID</li>
+                    <li>Passport</li>
+                    <li>Visa </li>
+                    <li>Any other travel-related documents stipulated.</li>
+                </ul>
+                <p>Note that visa-free countries still have specific entry and exit requirements that should be carefully reviewed.</p>
+                <p>Additionally, for accurate quoting during the initial consultation, we encourage sharing any relevant medical documents such as X-rays, CT scans, and reports from your local doctors as soon as possible.</p>
+            </div>
+        </div>
+  
+        <!-- FAQ 4 -->
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleAnswer(this)">
+                <span class="arrow">&#9660;</span>
+                What payment methods are accepted?
+            </button>
+            <div class="faq-answer">
+                <p>Our partner clinics accept various payment methods:</p>
+                <ul>
+                    <li>Cash</li>
+                    <li>Credit card</li>
+                    <li>Debit card</li>
+                    <li>Wire transfer</li>
+                    <li>PayPal</li>
+                    <li>Banker’s cheque</li>
+                </ul>
+                <p>Financing options are also available at selected hospitals for you. Moreover, Care Credit is accepted by our providers in some countries.</p>
+            </div>
+        </div>
+  
+        <!-- FAQ 5 -->
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleAnswer(this)">
+                <span class="arrow">&#9660;</span>
+                How do I fix an appointment?
+            </button>
+            <div class="faq-answer">
+                <p>You can schedule a call with us or request a quote for your preferred healthcare provider.</p>
+                <p>We will assign a medical tourism consultant to help you plan your entire medical tourism trip.</p>
+            </div>
+        </div>
+  
+        <!-- FAQ 6 -->
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleAnswer(this)">
+                <span class="arrow">&#9660;</span>
+                Do the doctors speak English?
+            </button>
+            <div class="faq-answer">
+                <p>Yes, our doctors speak in English and they also have translators onboard to avoid any language barriers.</p>
+            </div>
+        </div>
+  
+        <!-- FAQ 7 -->
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleAnswer(this)">
+                <span class="arrow">&#9660;</span>
+                Are doctors abroad certified?
+            </button>
+            <div class="faq-answer">
+                <p>Our medical practitioners are accredited by their national healthcare authorities.</p>
+                <p>Moreover, many have pursued their education at renowned international institutions such as Harvard, Cambridge, and New York University. We diligently conduct background screenings to validate the doctor's credentials.</p>
+            </div>
+        </div>
+  
+        <!-- FAQ 8 -->
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleAnswer(this)">
+                <span class="arrow">&#9660;</span>
+                Can someone accompany me for medical work abroad?
+            </button>
+            <div class="faq-answer">
+                <p>The decision to have a companion during your medical journey is entirely up to you.</p>
+                <p>Traveling with a friend or family member can add enjoyment especially if you plan to turn your trip into a vacation. Additionally, having a trusted companion is advisable if you undergo treatment requiring general anesthesia for added support and safety.</p>
+            </div>
+        </div>
+  
+        <!-- FAQ 9 -->
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleAnswer(this)">
+                <span class="arrow">&#9660;</span>
+                How long is the wait time to get a procedure done?
+            </button>
+            <div class="faq-answer">
+                <p>At Medease, you benefit from having appointments pre-scheduled.
+
+                    You can usually secure an appointment date promptly with us. We prioritize fixing your procedure date as soon as possible, sparing you from prolonged waiting and ensuring timely access to care..</p>
+            </div>
+        </div>
+  
+        <!-- FAQ 10 -->
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleAnswer(this)">
+                <span class="arrow">&#9660;</span>
+                What are the sterilization procedures followed by clinics?
+            </button>
+            <div class="faq-answer">
+                <p>Our medical facilities adhere to global sterilization standards. Prior to interacting with patients, doctors and staff wear protective gloves and masks. Surfaces are disinfected using antibacterial solutions, and the equipment is sterilized.</p>
+                <p>We prioritize the use of internationally recognized sterilization techniques and equipment to uphold the highest levels of patient safety.</p>
+            </div>
+        </div>
+  
+        <!-- FAQ 11 -->
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleAnswer(this)">
+                <span class="arrow">&#9660;</span>
+                Do you charge anything for your services?
+            </button>
+            <div class="faq-answer">
+                <p>We do not charge any additional fees for our services. Our goal is to make medical tourism accessible and affordable for everyone. You will only be responsible for the costs directly associated with your medical treatment and travel arrangements.</p>
+            </div>
+        </div>
+  
+        <!-- FAQ 12 -->
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleAnswer(this)">
+                <span class="arrow">&#9660;</span>
+                Will I be able to speak to the doctors directly?
+            </button>
+            <div class="faq-answer">
+                <p>Yes, we facilitate direct communication between patients and doctors whenever possible.</p>
+                <p>Whether it's through in-person consultations or video calls, we prioritize open communication to ensure that your medical concerns are addressed.</p>
+            </div>
+        </div>
+    </div>
+  
+        </div>
+    </div>
+</section>
+
+<script>
+    function toggleAnswer(button) {
+        const answer = button.nextElementSibling;
+        const arrow = button.querySelector(".arrow");
+        if (answer.style.display === "block") {
+            answer.style.display = "none";
+            arrow.innerHTML = "&#9660;";
+        } else {
+            answer.style.display = "block";
+            arrow.innerHTML = "&#9650;";
+        }
+    }
+</script>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="item phone">
+                    <img src="assets/images/phone-icon.png" alt="Phone Icon" style="max-width: 40px;">
+                    <h6>+254 723-334-445<br><span>Phone Number</span></h6>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="item email">
+                    <img src="assets/images/email-icon.png" alt="Email Icon" style="max-width: 40px;">
+                    <h6><a href="mailto:medeaseagency@gmail.com" style="color: black;">medeaseagency@gmail.com</a><br><span>Business Email</span></h6>
+                </div>
+                
+            </div>
+        </div>
+        <p>&copy; 2024 Medease Travel Agency. All rights reserved.</p>
+    </div>
+</footer>
+
+<!-- Scripts -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="assets/js/isotope.min.js"></script>
+<script src="assets/js/owl-carousel.js"></script>
+<script src="assets/js/counter.js"></script>
+<script src="assets/js/custom.js"></script>
+</body>
+</html>

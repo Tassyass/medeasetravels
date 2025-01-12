@@ -2,183 +2,338 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+    <title>Process Flow</title>
+
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <title>Our Expertise - MedEase Travels</title>
+
+    <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Additional CSS Files -->
     <link rel="stylesheet" href="assets/css/fontawesome.css">
     <link rel="stylesheet" href="assets/css/templatemo-villa-agency.css">
     <link rel="stylesheet" href="assets/css/owl.css">
     <link rel="stylesheet" href="assets/css/animate.css">
-    <!-- Bootstrap CSS -->
-<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+    <link rel="icon" type="image/x-icon" href="apple-touch-icon.png">
 
-<!-- Bootstrap JavaScript and Dependencies -->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
-<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-
+    <!-- Custom CSS for Schedule Button -->
     <style>
-        .expertise-item img {
-            max-width: 100%; /* Responsive width */
-            height: 150px; /* Adjusted height */
-            object-fit: cover; /* Crops to fit */
-            border-radius: 10px; /* Rounded corners */
-            margin-bottom: 15px; /* Spacing below the image */
+        /* Schedule Appointment Button Styling */
+        .scrollable-nav li:last-child a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px 20px;
+            border: 2px solid #01796f;
+            border-radius: 25px;
+            background-color: #01796f;
+            color: #ffffff;
+            font-weight: 600;
+            font-size: 14px;
+            text-align: center;
+            white-space: nowrap;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            height: 40px;
+            line-height: 40px;
         }
 
-        .expertise-item {
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            margin-bottom: 20px;
-        }
-
-        .expertise-item h3 {
+        .scrollable-nav li:last-child a:hover {
+            background-color: #ffffff;
             color: #01796f;
+            border-color: #01796f;
         }
 
-        .expertise-item p {
-            color: #555;
+        .scrollable-nav li:last-child a i.fa-calendar {
+            margin-right: 8px;
+            font-size: 18px;
+        }
+
+        @media (max-width: 768px) {
+            .scrollable-nav li:last-child a {
+                width: 100%;
+                text-align: center;
+                display: block;
+            }
         }
     </style>
 </head>
 
 <body>
-    <header class="header-area header-sticky">
+    <!-- Preloader -->
+    <div id="js-preloader" class="js-preloader">
+        <div class="preloader-inner">
+            <span class="dot"></span>
+            <div class="dots">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sub-header -->
+    <div class="sub-header">
         <div class="container">
-          <div class="row">
-            <div class="col-12">
-              <nav class="main-nav">
-                <!-- ** Logo Start ** -->
-                <a href="index.html" class="logo">
-                  <img src="medease logo.jpg" alt="logo" height="80" width="90">
-                </a>
-                <!-- ** Logo End ** -->
-                <!-- ** Menu Start ** -->
-                <ul class="nav">
-                  <li><a href="index.html" class="active">Home</a></li>
-                  <li><a href="about.html">About us</a></li>
-                  <li><a href="our-expertise.html">Our Expertise</a></li>
-                  <li><a href="index.html#contt">Contact Us</a></li>
-                  <li><a href="processflow.html">Process flow</a></li>
-                  <li><a href="schedule-appointment.html"><i class="fa fa-calendar"></i> Schedule an appointment</a></li>
-                </ul>
-                <a class="menu-trigger">
-                  <span>Menu</span>
-                </a>
-                <!-- ** Menu End ** -->
-              </nav>
-            </div>
-          </div>
-        </div>
-      </header>
-      
-
-    <div class="container mt-5">
-        <div class="section-heading text-center">
-            <h1>Our Expertise</h1>
-            <p class="intro">
-                Explore our wide range of medical specialties, provided by top healthcare professionals from our partner hospitals worldwide. At MedEase Travels, we ensure exceptional care and treatment tailored to your needs.
-            </p>
-        </div>
-
-        <!-- Services with Images -->
-        <div class="row mt-4">
-            <div class="col-md-4">
-                <div class="expertise-item">
-                    <img src="assets/images/pulmonary-medicine.jpg" alt="Pulmonary Medicine">
-                    <h3>Pulmonary Medicine</h3>
-                    <p>Comprehensive care for respiratory disorders, including asthma, COPD, and pulmonary infections.</p>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="expertise-item">
-                    <img src="assets/images/ent.jpg" alt="ENT">
-                    <h3>ENT</h3>
-                    <p>Expert diagnosis and treatment for ear, nose, and throat conditions.</p>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="expertise-item">
-                    <img src="assets/images/rheumatology.jpg" alt="Rheumatology">
-                    <h3>Rheumatology</h3>
-                    <p>Specialized care for autoimmune diseases and joint disorders.</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="row mt-4">
-            <div class="col-md-4">
-                <div class="expertise-item">
-                    <img src="assets/images/endocrinology.jpg" alt="Endocrinology">
-                    <h3>Endocrinology</h3>
-                    <p>Advanced care for hormonal imbalances and metabolic disorders.</p>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="expertise-item">
-                    <img src="assets/images/psychiatry.jpg" alt="Psychiatry">
-                    <h3>Psychiatry</h3>
-                    <p>Comprehensive mental health services, including counseling and medication management.</p>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="expertise-item">
-                    <img src="assets/images/ophthalmology.jpg" alt="Ophthalmology">
-                    <h3>Ophthalmology</h3>
-                    <p>World-class eye care, including surgeries for cataracts and refractive errors.</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="row mt-4">
-            <div class="col-md-4">
-                <div class="expertise-item">
-                    <img src="assets/images/emergency-trauma.jpg" alt="Emergency & Trauma">
-                    <h3>Emergency & Trauma</h3>
-                    <p>24/7 emergency care for critical injuries and medical emergencies.</p>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="expertise-item">
-                    <img src="assets/images/critical-care.jpg" alt="Critical Care">
-                    <h3>Critical Care</h3>
-                    <p>Advanced life support and monitoring for critically ill patients.</p>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="expertise-item">
-                    <img src="assets/images/dental.jpg" alt="Dental">
-                    <h3>Dental</h3>
-                    <p>Comprehensive dental services, including cosmetic and reconstructive dentistry.</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="row mt-4">
-            <div class="col-md-4">
-                <div class="expertise-item">
-                    <img src="assets/images/dermatology.jpg" alt="Dermatology">
-                    <h3>Dermatology</h3>
-                    <p>Treatment for skin conditions, including acne, eczema, and cosmetic skin care.</p>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="expertise-item">
-                    <img src="assets/images/homeopathy.jpg" alt="Homeopathy">
-                    <h3>Homeopathy</h3>
-                    <p>Holistic treatments using natural remedies for various health conditions.</p>
+            <div class="row">
+                <div class="col-lg-8 col-md-8">
+                    <ul class="info">
+                        <li><i class="fa fa-envelope" style="color:#01796f"></i> medeaseagency@gmail.com</li>
+                        <li><i class="fa fa-map" style="color:#01796f"></i> Nairobi, Kenya</li>
+                        <li><i class="fa fa-phone" style="color:#01796f"></i> +254 723-334-445</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </div>
 
-    <footer class="footer mt-5">
+    <!-- Header Area -->
+    <header class="header-area header-sticky">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <!-- Logo -->
+                        <a href="index.html" class="logo">
+                            <img src="medease logo.jpg" alt="logo" height="80" width="90">
+                        </a>
+
+                        <!-- Navigation Links -->
+                        <ul class="nav">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="our-expertise.html">Our Expertise</a></li>
+                            <li><a href="faq.html">FAQ</a></li>
+                            <li><a href="processflow.html" class="active">Process Flow</a></li>
+                            <li><a href="schedule-appointment.html"><i class="fa fa-calendar"></i> Schedule an Appointment</a></li>
+                        </ul>
+
+                        <!-- Menu Trigger for Mobile -->
+                        <a class="menu-trigger">
+                            <span>Menu</span>
+                        </a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+<div class="container mt-5">
+    <div class="section-heading text-center">
+        <h1>Our Expertise</h1>
+        <p class="intro">
+            Explore our wide range of medical specialties, provided by top healthcare professionals from our partner hospitals worldwide. At MedEase Travels, we ensure exceptional care and treatment tailored to your needs.
+        </p>
+    </div>
+
+    <!-- Expertise List -->
+    <div class="row mt-4">
+        <!-- Expertise Items (Sample Code for Repetition) -->
+        <div class="col-md-4">
+            <div class="expertise-item">
+                <img src="assets/images/cardiology.jpg" alt="Cardiology">
+                <h3>Cardiology and Cardiothoracic Surgery</h3>
+                <p>
+                    - Percutaneous Coronary Angioplasty (PTCA)<br>
+                    - Coronary Artery Bypass Grafting (CABG)<br>
+                    - Implantation of Pacemakers and Defibrillators<br>
+                    - Minimally Invasive Valve Repair
+                </p>
+            </div>
+        </div>
+        <div class="col-md-4">
+          <div class="expertise-item">
+              <img src="assets/images/orthopedics.jpg" alt="Orthopedics">
+              <h3>Orthopedics and Joint Replacement</h3>
+              <p>
+                  - Total Knee Arthroplasty<br>
+                  - Hip Replacement Surgery<br>
+                  - Shoulder Replacement Surgery<br>
+                  - Arthroscopic ACL Reconstruction
+              </p>
+          </div>
+      </div>
+      <div class="col-md-4">
+          <div class="expertise-item">
+              <img src="assets/images/neurosurgery.jpg" alt="Neurosurgery">
+              <h3>Neurosurgery</h3>
+              <p>
+                  - Spinal Fusion<br>
+                  - Deep Brain Stimulation (DBS)<br>
+                  - Microvascular Decompression for Trigeminal Neuralgia<br>
+                  - Minimally Invasive Brain Tumor Surgery
+              </p>
+          </div>
+      </div>
+  </div>
+
+  <div class="row mt-4">
+      <div class="col-md-4">
+          <div class="expertise-item">
+              <img src="assets/images/oncology.jpg" alt="Oncology">
+              <h3>Oncology (Cancer Care)</h3>
+              <p>
+                  - Robotic-Assisted Surgery for Tumor Removal<br>
+                  - Hyperthermic Intraperitoneal Chemotherapy (HIPEC)<br>
+                  - Advanced Radiation Therapies (e.g., Gamma Knife)<br>
+                  - Targeted Chemotherapy
+              </p>
+          </div>
+      </div>
+      <div class="col-md-4">
+          <div class="expertise-item">
+              <img src="assets/images/gastroenterology.jpg" alt="Gastroenterology">
+              <h3>Gastroenterology and Hepatology</h3>
+              <p>
+                  - Laparoscopic Cholecystectomy<br>
+                  - Endoscopic Retrograde Cholangiopancreatography (ERCP)<br>
+                  - Bariatric Surgeries<br>
+                  - Advanced Endoscopic Procedures
+              </p>
+          </div>
+      </div>
+      <div class="col-md-4">
+          <div class="expertise-item">
+              <img src="assets/images/urology.jpg" alt="Urology">
+              <h3>Urology</h3>
+              <p>
+                  - Robotic-Assisted Prostatectomy<br>
+                  - Ureteroscopic Stone Removal<br>
+                  - Laparoscopic Pyeloplasty<br>
+                  - Cystoscopy for Diagnostic and Therapeutic Purposes
+              </p>
+          </div>
+      </div>
+  </div>
+
+  <div class="row mt-4">
+      <div class="col-md-4">
+          <div class="expertise-item">
+              <img src="assets/images/pulmonology.jpg" alt="Pulmonology">
+              <h3>Pulmonology</h3>
+              <p>
+                  - Video-Assisted Thoracoscopic Surgery (VATS)<br>
+                  - Endobronchial Ultrasound (EBUS)<br>
+                  - Robotic-Assisted Lobectomy<br>
+                  - Pulmonary Function Tests and Bronchoscopy
+              </p>
+          </div>
+      </div>
+      <div class="col-md-4">
+          <div class="expertise-item">
+              <img src="assets/images/reproductive-medicine.jpg" alt="Reproductive Medicine">
+              <h3>Reproductive Medicine</h3>
+              <p>
+                  - In-Vitro Fertilization (IVF)<br>
+                  - Intracytoplasmic Sperm Injection (ICSI)<br>
+                  - Laparoscopic Myomectomy<br>
+                  - Hysteroscopic Polypectomy
+              </p>
+          </div>
+      </div>
+      <div class="col-md-4">
+          <div class="expertise-item">
+              <img src="assets/images/ophthalmology.jpg" alt="Ophthalmology">
+              <h3>Ophthalmology</h3>
+              <p>
+                  - Cataract Surgery with Intraocular Lens Implant<br>
+                  - LASIK Eye Surgery<br>
+                  - Vitrectomy for Retinal Disorders<br>
+                  - Glaucoma Drainage Surgery
+              </p>
+          </div>
+      </div>
+  </div>
+
+  <div class="row mt-4">
+      <div class="col-md-4">
+          <div class="expertise-item">
+              <img src="assets/images/dentistry.jpg" alt="Dentistry">
+              <h3>Dentistry</h3>
+              <p>
+                  - Full Mouth Rehabilitation<br>
+                  - Dental Implants<br>
+                  - Orthodontic Treatments (Braces and Aligners)<br>
+                  - Maxillofacial Surgery
+              </p>
+          </div>
+      </div>
+      <div class="col-md-4">
+          <div class="expertise-item">
+              <img src="assets/images/psychiatry.jpg" alt="Psychiatry">
+              <h3>Psychiatry</h3>
+              <p>
+                  - Electroconvulsive Therapy (ECT)<br>
+                  - Transcranial Magnetic Stimulation (TMS)<br>
+                  - Cognitive Behavioral Therapy (CBT)<br>
+                  - Comprehensive Addiction Management Programs
+              </p>
+          </div>
+      </div>
+      <div class="col-md-4">
+          <div class="expertise-item">
+              <img src="assets/images/dermatology.jpg" alt="Dermatology">
+              <h3>Dermatology</h3>
+              <p>
+                  - Laser Resurfacing for Skin Rejuvenation<br>
+                  - Mohs Surgery for Skin Cancer<br>
+                  - PRP Therapy for Hair Restoration<br>
+                  - Hair Transplant<br>
+                  - Dermal Fillers
+              </p>
+          </div>
+      </div>
+  </div>
+
+  <div class="row mt-4">
+      <div class="col-md-4">
+          <div class="expertise-item">
+              <img src="assets/images/weight-loss.jpg" alt="Weight Loss and Metabolic Surgery">
+              <h3>Weight Loss and Metabolic Surgery</h3>
+              <p>
+                  - Gastric Balloon Procedure<br>
+                  - Gastric Sleeve Surgery<br>
+                  - Laparoscopic Gastric Banding<br>
+                  - Comprehensive Weight Loss Programs
+              </p>
+          </div>
+      </div>
+  </div>
+</div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="footer mt-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="item phone">
+                    <img src="assets/images/phone-icon.png" alt="Phone Icon" style="max-width: 40px;">
+                    <h6>+254 723-334-445<br><span>Phone Number</span></h6>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="item email">
+                    <img src="assets/images/email-icon.png" alt="Email Icon" style="max-width: 40px;">
+                    <h6><a href="mailto:medeaseagency@gmail.com" style="color: black;">medeaseagency@gmail.com</a><br><span>Business Email</span></h6>
+                </div>
+            </div>
+        </div>
         <p class="text-center">&copy; 2024 MedEase Travels. All rights reserved.</p>
-    </footer>
+    </div>
+</footer>
+
+<!-- Scripts -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="assets/js/isotope.min.js"></script>
+<script src="assets/js/owl-carousel.js"></script>
+<script src="assets/js/counter.js"></script>
+<script src="assets/js/custom.js"></script>
 </body>
 
 </html>
