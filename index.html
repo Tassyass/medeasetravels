@@ -1,68 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+  <head>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
-    <title>MedEase Travels Medical Tourism</title>
-
-    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <title>MedEase Travels Medical Tourism</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
 
     <!-- Additional CSS Files -->
     <link rel="stylesheet" href="assets/css/fontawesome.css">
     <link rel="stylesheet" href="assets/css/templatemo-villa-agency.css">
     <link rel="stylesheet" href="assets/css/owl.css">
     <link rel="stylesheet" href="assets/css/animate.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
     <link rel="icon" type="image/x-icon" href="apple-touch-icon.png">
 
-    <!-- Schedule Appointment Button CSS -->
-    <style>
-        /* Schedule Appointment Button Styling */
-        .scrollable-nav li:last-child a {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            padding: 10px 20px;
-            border: 2px solid #01796f;
-            border-radius: 25px;
-            background-color: #01796f;
-            color: #ffffff;
-            font-weight: 600;
-            font-size: 14px;
-            text-align: center;
-            white-space: nowrap;
-            transition: background-color 0.3s ease, color 0.3s ease;
-            height: 40px;
-            line-height: 40px;
-        }
+  </head>
 
-        .scrollable-nav li:last-child a:hover {
-            background-color: #ffffff;
-            color: #01796f;
-            border-color: #01796f;
-        }
 
-        .scrollable-nav li:last-child a i.fa-calendar {
-            margin-right: 8px;
-            font-size: 18px;
-        }
-
-        @media (max-width: 768px) {
-            .scrollable-nav li:last-child a {
-                width: 100%;
-                text-align: center;
-                display: block;
-            }
-        }
-    </style>
-</head>
-
+  
 <body>
+
   <!-- ** Preloader Start ** -->
   <div id="js-preloader" class="js-preloader">
     <div class="preloader-inner">
@@ -87,7 +51,6 @@
           </ul>
         </div>
        
-       
       </div>
     </div>
   </div>
@@ -103,28 +66,35 @@
               <img src="medease logo.jpg" alt="logo" height="80" width="90">
             </a>
   
-            <!-- Menu Trigger for Mobile -->
             <a class="menu-trigger">
               <span></span>
               <span></span>
               <span></span>
             </a>
-  
-            <!-- Navigation Links -->
-            <ul class="nav">
-              <li><a href="index.html" class="active">Home</a></li>
-              <li><a href="about.html">About us</a></li>
-              <li><a href="our-expertise.html">Our Expertise</a></li>
-              <li><a href="faq.html">FAQ</a></li>
-              <li><a href="processflow.html">Process flow</a></li>
-              <li><a href="schedule-appointment.html"><i class="fa fa-calendar"></i> Schedule an appointment</a></li>
-            </ul>
-          </nav>
+            
+            <div class="scrollable-nav">
+              <ul class="nav">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="our-expertise.html">Our Expertise</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="processflow.html">Process flow</a></li>
+                <li><a href="schedule-appointment.html"><i class="fa fa-calendar"></i> Schedule an appointment</a></li>
+              </ul>
+            </div>
+            </div>
+            
+            <script>
+  document.querySelector(".menu-trigger").addEventListener("click", function () {
+    const nav = document.querySelector(".nav");
+    nav.classList.toggle("active");
+  });
+</script>
+
         </div>
       </div>
     </div>
   </header>
-  
   
   <!-- ** Header Area End ** -->
  <!-- Main Banner Section -->
@@ -132,38 +102,7 @@
   <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0; margin: 0;"
     src="https://www.canva.com/design/DAGattLZFHE/tsmfxynhPEmDyySXtOfQlg/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
   </iframe>
- <div style="position: relative; width: 100%; height: 0; padding-top: 56.2225%; padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden; border-radius: 8px; will-change: transform;">
-  <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0; margin: 0;"
-    src="https://www.canva.com/design/DAGattLZFHE/tsmfxynhPEmDyySXtOfQlg/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
-  </iframe>
 </div>
-
-
-
-
-<section id="why-choose-medease" class="section">
-  <div class="container">
-      <div class="row justify-content-center">
-          <div class="col-lg-8">
-              <div class="section-heading text-center">
-               
-                  <h2>Why Choose Medease Travels?</h2>
-              </div>
-              <div class="why-choose-box">
-                  <ol>
-                      <li>Access to India's top hospitals offering cutting-edge treatments and state-of-the-art technology.</li>
-                      <li>Tailored healthcare packages that combine affordability with excellence.</li>
-                      <li>End-to-end support, including visa facilitation, accommodation, and personalized care.</li>
-                      <li>Expert coordination to ensure a seamless medical experience with zero hassle.</li>
-                      <li>Partnerships with renowned specialists for faster consultations and high success rates.</li>
-                      <li>24/7 multilingual assistance to make you feel at home throughout your journey.</li>
-                      <li>A holistic approach to medical tourism, blending exceptional care with cultural exploration.</li>
-                  </ol>
-              </div>
-          </div>
-      </div>
-  </div>
-</section>
 
 
 
@@ -215,67 +154,38 @@
  </pre> 
  
      
- </pre> 
- 
-     
 </body>
 <div class="testimonials section">
   <div class="container">
-    <div class="row">
-      <div class="col-lg-12">
-        <h3 class="text-center">Patient Testimonials</h3>
-        <div class="owl-carousel owl-testimonials">
-          <div class="item">
-            <img src="assets/images/mohamed.jpg" alt="Mohamednoor Maalim image" class="testimonial-image">
-            <p>"Thanks to Medease Travels, I had rotator cuff surgery done in India after two failed procedures in Kenya, and I am very grateful for their services."</p>
-            <span>- Mohamednoor Maalim, Mombasa</span>
+      <div class="row">
+          <div class="col-lg-12">
+              <h3 class="text-center">Patient Testimonials</h3>
+              <div class="owl-carousel owl-testimonials">
+                  <div class="item">
+                      <img src="assets/images/mohamed 1.png" alt="Mohamednoor Maalim image" class="testimonial-image">
+                      <p>"Thanks to Medease Travels, I had rotator cuff surgery done in India after two failed procedures in Kenya, and I am very grateful for their services."</p>
+                      <span>- Mohamednoor Maalim, Mombasa</span>
+                  </div>
+                  <div class="item">
+                      <img src="assets/images/dahir 1.png" alt="Dahir Adan Mahad image" class="testimonial-image">
+                      <p>"Medease Travels helped me undergo cholecystectomy, where my gallbladder was removed laparoscopically, and I was discharged in 24 hrs!"</p>
+                      <span>- Dahir Adan Mahad, Nairobi</span>
+                  </div>
+                  <div class="item">
+                      <img src="assets/images/rahma 1.png" alt="Rahma Adhan Abdullah image" class="testimonial-image">
+                      <p>"Thanks to Medease Travels, I underwent a successful heart surgery in Delhi. Their support throughout the journey was incredible."</p>
+                      <span>- Rahma Adhan Abdullah, Nairobi</span>
+                  </div>
+                  <div class="item">
+                      <img src="assets/images/haji 1.png" alt="Hajj Issack image" class="testimonial-image">
+                      <p>"Medease helped us find the best neurologist for my son’s treatment. Their services were affordable and very professional."</p>
+                      <span>- Hajj Issack, Mandera</span>
+                  </div>
+              </div>
           </div>
-          <div class="item">
-            <img src="assets/images/dahir.jpg" alt="Dahir Adan Mahad image" class="testimonial-image">
-            <p>"Medease Travels helped me undergo cholecystectomy, where my gallbladder was removed laparoscopically, and I was discharged in 24 hrs!"</p>
-            <span>- Dahir Adan Mahad, Nairobi</span>
-          </div>
-          <div class="item">
-            <img src="assets/images/rahma.jpg" alt="Rahma Adhan Abdullah image" class="testimonial-image">
-            <p>"Thanks to Medease Travels, I underwent a successful heart surgery in Delhi. Their support throughout the journey was incredible."</p>
-            <span>- Rahma Adhan Abdullah, Nairobi</span>
-          </div>
-          <div class="item">
-            <img src="assets/images/haji.jpg" alt="Hajj Issack image" class="testimonial-image">
-            <p>"Medease helped us find the best neurologist for my son’s treatment. Their services were affordable and very professional."</p>
-            <span>- Hajj Issack, Mandera</span>
-          </div>
-        </div>
       </div>
-    </div>
   </div>
 </div>
-
-
-
-
- 
-  <div class="contact section" id="contt">
-    <pre>
-
-
-
-
-
-
-      
-    </pre>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-4 offset-lg-4">
-          <div class="section-heading text-center">
-            <h6>| Contact Us</h6>
-            <h2 style="color:#FFD700;">Get In Touch With Us</h2>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 
       <!-- Contact Form Section -->
       <div class="contact-content">
@@ -291,9 +201,9 @@
             </div>
       
         <!-- Contact Form Section -->
-        <div class="col-lg-6 col-md-6">
+        <div class="col-lg-6 col-md-6" id="contt">
           <form id="contact-form" action="" method="post">
-            <div class="row">
+            <div class="row" >
               <div class="col-lg-12 mb-3">
                 <fieldset>
                   <label for="name">Full Name</label>
@@ -397,10 +307,6 @@
 <footer class="footer">
   <div class="container">
       <!-- Contact Information Section -->
-
-<footer class="footer">
-  <div class="container">
-      <!-- Contact Information Section -->
       <div class="row">
           <div class="col-lg-6">
               <div class="item phone">
@@ -414,61 +320,7 @@
                   <h6><a href="mailto:medeaseagency@gmail.com" style="color: black;">medeaseagency@gmail.com</a><br><span>Business Email</span></h6>
               </div>
           </div>
-          <div class="col-lg-6">
-              <div class="item phone">
-                  <img src="assets/images/phone-icon.png" alt="Phone Icon" style="max-width: 40px;">
-                  <h6>+254 723-334-445 <br><span>Phone Number</span></h6>
-              </div>
-          </div>
-          <div class="col-lg-6">
-              <div class="item email">
-                  <img src="assets/images/email-icon.png" alt="Email Icon" style="max-width: 40px;">
-                  <h6><a href="mailto:medeaseagency@gmail.com" style="color: black;">medeaseagency@gmail.com</a><br><span>Business Email</span></h6>
-              </div>
-          </div>
       </div>
-
-      <!-- Social Links Section -->
-      <div class="row mt-4">
-          <div class="col-lg-12">
-              <ul class="social-links" style="list-style: none; padding: 0; text-align: center;">
-                  <li style="display: inline-block; margin: 0 15px;">
-                      <span style="font-weight: bold;">FACEBOOK:</span>
-                      <a href="https://www.facebook.com/share/19gmNW1Zwx/?mibextid=wwXIfr" target="_blank">
-                          <i class="fab fa-facebook"></i>
-                      </a>
-                  </li>
-                  <li style="display: inline-block; margin: 0 15px;">
-                      <span style="font-weight: bold;">TWITTER:</span>
-                      <a href="#" target="_blank">
-                          <i class="fab fa-twitter"></i>
-                      </a>
-                  </li>
-                  <li style="display: inline-block; margin: 0 15px;">
-                      <span style="font-weight: bold;">LINKEDIN:</span>
-                      <a href="https://www.linkedin.com/posts/medease-travels_welcome-to-medease-travels-your-partner-activity-7277038695835197441-xmSR?utm_source=social_share_send&utm_medium=member_desktop_web" target="_blank">
-                          <i class="fab fa-linkedin"></i>
-                      </a>
-                  </li>
-                  <li style="display: inline-block; margin: 0 15px;">
-                      <span style="font-weight: bold;">INSTAGRAM:</span>
-                      <a href="https://www.instagram.com/medease_travels/profilecard/?igsh=dGhkbzBrcWhrZXVo" target="_blank">
-                          <i class="fab fa-instagram"></i>
-                      </a>
-                  </li>
-              </ul>
-          </div>
-      </div>
-
-      <!-- Footer Copyright -->
-      <div class="row mt-4">
-          <div class="col-lg-12 text-center">
-              <p>&copy; 2024 Medease  Travel Agency. All rights reserved.</p>
-          </div>
-      </div>
-  </div>
-</footer>
-
 
       <!-- Social Links Section -->
       <div class="row mt-4">
