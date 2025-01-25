@@ -644,6 +644,37 @@ footer.footer a:hover {
 }
 
 
+/* Socials Grid Styling */
+.socials-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  justify-content: center;
+  max-width: 400px; /* Adjust grid width */
+  margin: 20px auto;
+}
+
+.social-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px; /* Size of each icon */
+  height: 60px;
+  border-radius: 50%;
+  text-decoration: none;
+  color: #fff;
+  font-size: 28px; /* Icon size */
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+
+/* Hover Effects */
+.social-icon:hover {
+  transform: scale(1.2);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+
 /* Patient Testimonials Images */
 .testimonial-image {
   max-width: 100%;
@@ -1973,39 +2004,98 @@ a:hover {
   text-decoration: underline;
 }
 
-/* 
----------------------------------------------
-Footer Style
---------------------------------------------- 
-*/
-
+/* Footer Style */
 footer {
-  background-color: #000001; 
-  color: #ffffff;              
-  text-align: center;       
-  padding: 10px 0;          
-  font-size: 14px;          
-  font-family: Arial, sans-serif; 
-  border-top: 1px solid #ddd;
+  background-color: #004d40; /* Green background */
+  color: white;
+  padding: 20px 0;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  width: 100%;
+  margin: 0;
+}
+
+.container-fluid {
+  padding: 0 30px;
+}
+
+.footer-heading {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: black;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.footer-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 14px; /* Smaller size for content */
+  line-height: 1.5;
+  color: black;
+}
+
+.footer-list li {
+  margin-bottom: 10px;
+}
+
+.footer-list li i {
+  color: black; /* Ensures icons are black */
+}
+
+.links-list {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.links-list li {
+  margin: 5px 0;
+}
+
+.links-list li a {
+  color: black;
+  text-decoration: none;
+}
+
+.links-list li a:hover {
+  text-decoration: underline;
+}
+
+.socials-grid {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.social-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  text-decoration: none;
+  color: #fff;
+  font-size: 24px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.facebook { background-color: #3b5998; }
+.twitter { background-color: #1da1f2; } /* Updated for X logo */
+.linkedin { background-color: #0077b5; }
+.instagram { background-color: #e4405f; }
+
+.social-icon:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 footer p {
+  margin: 0;
   text-align: center;
-  line-height: 100px;
-  color: #fff;
-  font-size: 16px;
-  font-weight: 400;
-}
-
-footer p a {
-  color: #fff;
-  transition: all .3s;
-  position: relative;
-  z-index: 3;
-}
-
-footer p a:hover {
-  opacity: 0.75;
 }
 
 
