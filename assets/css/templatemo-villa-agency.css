@@ -2006,17 +2006,31 @@ a:hover {
 
 /* Footer Style */
 footer {
-  background-color: #004d40; /* Green background */
+  background-color: #004d40 ; 
   color: white;
   padding: 20px 0;
   font-size: 16px;
   font-family: Arial, sans-serif;
   width: 100%;
   margin: 0;
+  position: relative; 
+}
+
+
+
+body {
+  margin: 0; /* Remove default margin for body */
+}
+
+html, body {
+  height: 90%; /* Ensures the footer stretches across the bottom */
+  max-width: 100%;
 }
 
 .container-fluid {
-  padding: 0 30px;
+  padding: 0; /* Remove padding around the container */
+  margin: 0 auto; /* Center align the content */
+  max-width: 100%; /* Ensure it spans full width */
 }
 
 .footer-heading {
@@ -2032,7 +2046,7 @@ footer {
   list-style: none;
   padding: 0;
   margin: 0;
-  font-size: 14px; /* Smaller size for content */
+  font-size: 14px;
   line-height: 1.5;
   color: black;
 }
@@ -2084,7 +2098,7 @@ footer {
 }
 
 .facebook { background-color: #3b5998; }
-.twitter { background-color: #1da1f2; } /* Updated for X logo */
+.twitter { background-color: #1da1f2; }
 .linkedin { background-color: #0077b5; }
 .instagram { background-color: #e4405f; }
 
